@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="webApp">
+    <head>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/app.routes.js"></script>
+        <script src="scripts/components/header.js"></script>
+        <script src="scripts/components/footer.js"></script>
+    </head>
+    <body>
+        <header-comp></header-comp>
+        <div ui-view></div>
+        <footer-comp></footer-comp>
+    </body>
+</html>
