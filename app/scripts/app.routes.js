@@ -17,46 +17,37 @@ function routes ($stateProvider) {
                 })*/
                 .state('home', {
                     url: '/',
-                    //redirectTo: redirect,
-                    templateUrl: 'views/index.html',
-                    //controllerAs: 'transactions',
+                    component: 'appMain',
                     publicPage: true
                 })
                 .state('nosotros', {
                     url: '/nosotros',
-                    //redirectTo: redirect,
-                    templateUrl: 'views/nosotros.html',
-                    //controllerAs: 'transactions',
+                    component: 'appNosotros',
+                    publicPage: true
+                })
+
+                .state('contacto', {
+                    url: '/contacto',
+                    component: 'appContacto',
                     publicPage: true
                 })
                 .state('productos', {
                     url: '/productos',
-                    //redirectTo: redirect,
-                    templateUrl: 'views/productos.html',
-                    //controllerAs: 'transactions',
+                    component: 'appProductos',
                     publicPage: true
                 })
+
                 .state('servicios', {
                     url: '/servicios',
-                    //redirectTo: redirect,
-                    templateUrl: 'views/servicios.html',
-                    //controllerAs: 'transactions',
+                    component: 'appServicios',
                     publicPage: true
                 })
                 .state('soporte', {
                     url: '/soporte',
-                    //redirectTo: redirect,
-                    templateUrl: 'views/soporte.html',
-                    //controllerAs: 'transactions',
+                    component: 'appSoporte',
                     publicPage: true
                 })
-                .state('contacto', {
-                    url: '/contacto',
-                    //redirectTo: redirect,
-                    templateUrl: 'views/contacto.html',
-                    //controllerAs: 'transactions',
-                    publicPage: true
-                })
+
 
                 /*
                 .state('about', {

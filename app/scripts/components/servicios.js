@@ -2,10 +2,10 @@
     'use strict';
     angular.module('webApp')
 
-    .component('headerComp', {
+    .component('appServicios', {
         bindings: {
           data: '<',
         },
-        templateUrl: 'views/header.html'
+        templateUrl: 'views/servicios.html'
       })
 })();

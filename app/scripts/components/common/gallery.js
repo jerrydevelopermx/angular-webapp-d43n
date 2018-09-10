@@ -2,10 +2,10 @@
     'use strict';
     angular.module('webApp')
 
-    .component('footerComp', {
+    .component('appGallery', {
         bindings: {
           data: '<',
         },
-        templateUrl: 'views/footer.html'
+        templateUrl: 'views/common/gallery.html'
       })
 })();
