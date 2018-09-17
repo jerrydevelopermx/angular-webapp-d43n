@@ -1,0 +1,16 @@
+.content-column {
+  padding: 30px;
+  border:1px solid;
+  margin:10px;
+}
+.content-column-footer {
+  padding: 50px;
+  border:1px solid;
+  margin:10px;
+}
+md-nav-bar .md-button._md-nav-button.md-unselected {
+  color: #ffffff;
+}
+.img-container{
+  padding: 15px;
+}

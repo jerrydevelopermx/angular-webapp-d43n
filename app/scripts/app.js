@@ -10,7 +10,9 @@
  */
 angular
   .module('webApp',[
-      'ui.router'
+      'ui.router',
+      'ngMaterial',
+      'ngMessages'
   ])
   /*
   .config(['$httpProvider', ($httpProvider) => {
