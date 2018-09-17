@@ -37,6 +37,7 @@ body {
   padding-top: 25px;
   border:1px solid;
   height: 80px;
+  margin:10px;
 }
 
 md-nav-bar .md-button._md-nav-button.md-unselected {

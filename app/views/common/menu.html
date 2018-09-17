@@ -5,7 +5,16 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333333;
+    color:#fff;
 }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+/*
 
 li {
     float: left;
@@ -22,12 +31,16 @@ li a {
 li a:hover {
     background-color: #111111;
 }
+*/
 </style>
 
 
 <div flex layout="column">
  <md-content>
    <md-nav-bar md-selected-nav-item="currentNavItem">
+     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="md-primary">
+             Ham burger
+     </md-button>
      <md-nav-item md-nav-href="#!/" name="home">Inicio</md-nav-item>
      <md-nav-item md-nav-href="#!/nosotros" name="nosotros">Nosotros</md-nav-item>
      <md-nav-item md-nav-href="#!/productos" name="productos">Productos</md-nav-item>
@@ -36,6 +49,24 @@ li a:hover {
      <md-nav-item md-nav-href="#!/contacto" name="contacto">Contacto</md-nav-item>
    </md-nav-bar>
 </md-content>
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+  <md-toolbar class="md-theme-light">
+    <h1 class="md-toolbar-tools">Menú</h1>
+  </md-toolbar>
+  <md-content layout-padding>
+    <ul>
+        <li><a href="#!/">Inicio</a></b></li>
+        <li><a href="#!/nosotros">Nosotros</a></li>
+        <li><a href="#!/productos">Productos</a></li>
+        <li><a href="#!/servicios">Servicios</a></li>
+        <li><a href="#!/soporte">Soporte</a></li>
+        <li><a href="#!/contacto">Contacto</a></li>
+    </ul>
+    <!--   <md-button ng-click="close()" class="md-primary">
+      Close Sidenav Right-->
+    </md-button>
+  </md-content>
+</md-sidenav>
 </div>
 
   <!--
