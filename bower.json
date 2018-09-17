@@ -8,5 +8,8 @@
     "angular-google-maps": "2.3.3",
     "angular-simple-logger": "^0.1.7"
   },
+  "resolutions": {
+    "angular": "1.7.2"
+  },
   "appPath": "app"
 }
