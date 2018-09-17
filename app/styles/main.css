@@ -1,3 +1,28 @@
+body {
+  background: #fff;
+  font-size: 11pt;
+  font-family: sans-serif;
+}
+
+@media all and (min-width: 960px) {
+    body{
+        font-size: 11pt;
+    }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+    body{
+        font-size: 12pt;
+    }
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+        font-size: 14pt;
+    }
+
+}
+
 .content-column {
   padding: 30px;
   border:1px solid;
