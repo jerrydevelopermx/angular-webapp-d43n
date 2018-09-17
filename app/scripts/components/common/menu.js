@@ -40,7 +40,7 @@
               .then(function() {
                 //$log.debug("toggle " + navID + " is done");
               });
-          }, 200);
+          }, 0);
         }
 
         function buildToggler(navID) {
