@@ -11,7 +11,9 @@
   },
   "scripts": {
     "start": "node server.js",
-    "postinstall": "bower cache clean && bower install"
+    "postinstall": "bower cache clean && bower install",
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "heroku-postbuild": "echo This runs afterwards."
   },
   "appPath": "app"
 }
