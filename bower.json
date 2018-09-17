@@ -6,14 +6,7 @@
     "angular-ui-router": "^1.0.20",
     "angular-material": "^1.1.10",
     "angular-google-maps": "2.3.3",
-    "angular-simple-logger": "^0.1.7",
-    "bower": "1.8.4"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "postinstall": "bower cache clean && bower install",
-    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-    "heroku-postbuild": "echo This runs afterwards."
+    "angular-simple-logger": "^0.1.7"
   },
   "appPath": "app"
 }
