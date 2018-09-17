@@ -33,6 +33,12 @@ body {
   border:1px solid;
   margin:10px;
 }
+.content-column-footer-rights {
+  padding-top: 25px;
+  border:1px solid;
+  height: 80px;
+}
+
 md-nav-bar .md-button._md-nav-button.md-unselected {
   color: #ffffff;
 }
