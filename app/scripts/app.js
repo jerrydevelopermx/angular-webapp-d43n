@@ -12,7 +12,9 @@ angular
   .module('webApp',[
       'ui.router',
       'ngMaterial',
-      'ngMessages'
+      'ngMessages',
+      'uiGmapgoogle-maps',
+      'nemLogging'
   ])
   /*
   .config(['$httpProvider', ($httpProvider) => {
