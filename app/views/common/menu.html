@@ -36,17 +36,20 @@ li a:hover {
 
 
 <div flex layout="column">
- <md-content>
-   <md-nav-bar md-selected-nav-item="currentNavItem">
-     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="md-primary">
-             Ham burger
-     </md-button>
+ <md-content flex layout="row">
+   <md-nav-bar flex md-selected-nav-item="currentNavItem" hide-xs hide-md>
      <md-nav-item md-nav-href="#!/" name="home">Inicio</md-nav-item>
      <md-nav-item md-nav-href="#!/nosotros" name="nosotros">Nosotros</md-nav-item>
      <md-nav-item md-nav-href="#!/productos" name="productos">Productos</md-nav-item>
      <md-nav-item md-nav-href="#!/servicios" name="servicios">Servicios</md-nav-item>
      <md-nav-item md-nav-href="#!/soporte" name="soporte">Soporte</md-nav-item>
      <md-nav-item md-nav-href="#!/contacto" name="contacto">Contacto</md-nav-item>
+   </md-nav-bar>
+   <md-nav-bar flex show-xs hide-lg hide-md>
+     <span flex></span>
+     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="md-primary" style="color: white">
+       Menu
+     </md-button>
    </md-nav-bar>
 </md-content>
 <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
@@ -55,12 +58,12 @@ li a:hover {
   </md-toolbar>
   <md-content layout-padding>
     <ul>
-        <li><a href="#!/">Inicio</a></b></li>
-        <li><a href="#!/nosotros">Nosotros</a></li>
-        <li><a href="#!/productos">Productos</a></li>
-        <li><a href="#!/servicios">Servicios</a></li>
-        <li><a href="#!/soporte">Soporte</a></li>
-        <li><a href="#!/contacto">Contacto</a></li>
+        <li><a href="#!/" ng-click="$ctrl.menuClicked()">Inicio</a></b></li>
+        <li><a href="#!/nosotros" ng-click="$ctrl.menuClicked()">Nosotros</a></li>
+        <li><a href="#!/productos" ng-click="$ctrl.menuClicked()">Productos</a></li>
+        <li><a href="#!/servicios" ng-click="$ctrl.menuClicked()">Servicios</a></li>
+        <li><a href="#!/soporte" ng-click="$ctrl.menuClicked()">Soporte</a></li>
+        <li><a href="#!/contacto" ng-click="$ctrl.menuClicked()">Contacto</a></li>
     </ul>
     <!--   <md-button ng-click="close()" class="md-primary">
       Close Sidenav Right-->

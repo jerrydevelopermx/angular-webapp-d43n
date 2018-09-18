@@ -19,6 +19,13 @@
           return $mdSidenav('right').isOpen();
         };
 
+        vm.menuClicked = function(){
+          $mdSidenav('right').close()
+            .then(function() {
+              //return;
+            });
+        };
+
         function debounce(func, wait, context) {
           var timer;
           return function debounced() {
@@ -53,6 +60,5 @@
               });
           }
         }
-
       }
 })();

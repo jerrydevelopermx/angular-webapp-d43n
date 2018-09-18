@@ -15,6 +15,7 @@ angular
       'ngMessages',
       'uiGmapgoogle-maps',
       'nemLogging'
+
   ])
   /*
   .config(['$httpProvider', ($httpProvider) => {
