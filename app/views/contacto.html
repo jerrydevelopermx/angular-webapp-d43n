@@ -1,5 +1,19 @@
-<div>
-    <h1>CONTACTO PAGE</h1>
-    <app-location></app-location>
+<div flex layout="column" layout-md="column" layout-xs="column">
+  <div flex layout="row" layout-md="column" layout-xs="column">
+    <div flex flex-order="1" flex-order-md="2" class="content-column">
+      <h3>Información de contacto</h3>
+      <p>Dirección: 4 NORTE 608 COLONIA CENTRO PUEBLA, PUEBLA MÉXICO C.P. 72000</p>
+      <p>Teléfono: 01(222)4049195</p>
+      <p>E-mail: contacto@daencopiadoras.com.mx</p>
+    </div>
+    <div flex flex-order="2" flex-order-md="1" class="content-column">
+      <app-location></app-location>
+    </div>
+  </div>
+
+
+
+  <div flex layout="column" layout-md="column" layout-xs="column">
     <app-contact-form></app-contact-form>
+  </div>
 </div>
