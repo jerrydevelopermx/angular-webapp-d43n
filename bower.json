@@ -4,7 +4,12 @@
   "dependencies": {
     "angular": "1.7.2",
     "angular-ui-router": "^1.0.20",
-    "angular-material": "^1.1.10"
+    "angular-material": "^1.1.10",
+    "angular-google-maps": "2.3.3",
+    "angular-simple-logger": "^0.1.7"
+  },
+  "resolutions": {
+    "angular": "1.7.2"
   },
   "appPath": "app"
 }
