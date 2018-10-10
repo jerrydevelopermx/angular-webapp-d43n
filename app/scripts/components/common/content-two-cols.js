@@ -4,8 +4,18 @@
 
     .component('appTwoCols', {
         bindings: {
-          data: '<',
+          data: '=',
         },
-        templateUrl: 'views/common/content-two-cols.html'
-      })
+        templateUrl: 'views/common/content-two-cols.html',
+        controller: componentController
+      });
+
+      function componentController($scope){
+        var vm = this;
+
+        vm.$onInit = function(){
+          console.log(vm.data)
+        }
+      }
+
 })();

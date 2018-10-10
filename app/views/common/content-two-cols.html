@@ -1,14 +1,21 @@
-<div flex layout="row" layout-md="column" layout-xs="column">
-  <div flex class="content-column">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie. Donec aliquam a mauris eu lobortis. In iaculis pretium sem, a placerat mi tempus quis. Morbi pulvinar ex quis luctus aliquam. Phasellus ullamcorper tincidunt metus ut molestie. Praesent non tincidunt dui. Vivamus dui sem, semper in eros vel, laoreet pellentesque ipsum.
+<div flex layout="column" class="{{$ctrl.data.class}}">
+    <h2>{{$ctrl.data.title}}</h2>
+    <div flex layout="row" layout-md="column" layout-xs="column" >
 
-Proin tellus ante, faucibus in pharetra ac, commodo non lorem. Cras sit amet lorem imperdiet, sollicitudin urna vel, dignissim magna. Proin egestas lorem at finibus condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eleifend sem eu euismod luctus. Quisque vitae consectetur elit. Curabitur ut sagittis diam. Donec rhoncus nibh eget dui porta, vel faucibus erat eleifend. Cras vitae ipsum non magna rhoncus finibus. Ut interdum tristique metus ac consequat.
-
-Duis dictum accumsan nisi, vitae tristique turpis ultricies in. Donec ullamcorper nibh id enim lacinia condimentum. Vivamus iaculis aliquet nisl, sit amet pretium sem ultricies quis. Ut at tellus sed orci finibus interdum et non elit. Morbi nec mi urna. Mauris aliquet, tellus quis gravida malesuada, tortor dui iaculis diam, nec blandit urna erat eu felis. Donec finibus sit amet dui maximus semper. Ut sollicitudin mi ut mauris porta accumsan sit amet sed ante. Nam varius eleifend quam, vitae laoreet neque sollicitudin a. Nunc blandit nibh ac laoreet pulvinar. Nullam pharetra enim eu lacus sollicitudin semper. Duis neque ipsum, lacinia at est eu, mollis tincidunt diam. In hac habitasse platea dictumst. In efficitur nisi at enim fermentum porta. Vivamus id feugiat dolor.
-  </div>
-  <div flex class="content-column">
-      Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, vitae maximus augue pretium a. Donec condimentum leo vel egestas pulvinar. Quisque vitae felis sit amet nulla convallis porta et in urna. Vivamus venenatis, ipsum vitae ultricies fermentum, metus nisi ullamcorper lorem, eget tempus ligula odio fermentum odio. Nam condimentum erat auctor ipsum faucibus, at mattis metus luctus. Sed vulputate rutrum dui vel placerat. Aenean congue quis tellus non pulvinar. Etiam luctus ligula et suscipit faucibus. Sed ac sollicitudin magna. Pellentesque eget pulvinar augue, in ultricies massa. Etiam vitae neque pretium, blandit erat et, sagittis libero.
-
-Etiam commodo pharetra quam. Curabitur arcu velit, rhoncus lacinia augue a, dictum mollis ipsum. Praesent malesuada, ipsum ac porta ultrices, odio risus dictum urna, vel blandit justo metus in sem. Praesent vel lacus lobortis, tristique nulla vel, condimentum est. Suspendisse vel est nec ipsum pulvinar tincidunt vel ac magna. Donec sed ligula nec odio imperdiet posuere. Pellentesque lacinia dui ac elit aliquam commodo. Phasellus dignissim auctor pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac justo eget vestibulum.
-  </div>
+      <div flex class="content-column">
+        <li class="icon rounded major fa-exclamation-triangle"> <a> </a></li>
+        <h3>{{$ctrl.data.colOne.title}}</h3>
+        <!--
+          <li class="icon fa-cog major"> </li>
+          <li class="icon rounded fa-twitter"> <a> </a></li>
+          <li class="icon rounded fa-bars"> <a> </a></li>
+        -->
+          {{$ctrl.data.colOne.content}}
+    </div>
+      <div flex class="content-column">
+        <li class="icon rounded major fa-ambulance"> <a> </a></li>
+        <h3>{{$ctrl.data.colTwo.title}}</h3>
+            {{$ctrl.data.colTwo.content}}
+          </div>
+    </div>
 </div>

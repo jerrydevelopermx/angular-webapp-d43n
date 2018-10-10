@@ -4,12 +4,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
-    color:#fff;
+    background-color: #fff;
+    color:#000;
 }
 li a {
     display: block;
-    color: white;
+    color:#000;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -37,7 +37,8 @@ li a:hover {
 
 <div flex layout="column">
  <md-content flex layout="row">
-   <md-nav-bar flex md-selected-nav-item="currentNavItem" hide-xs hide-md>
+   <div class="logo"> </div>
+    <md-nav-bar flex md-selected-nav-item="currentNavItem" hide-xs hide-sm hide-md>
      <md-nav-item md-nav-href="#!/" name="home">Inicio</md-nav-item>
      <md-nav-item md-nav-href="#!/nosotros" name="nosotros">Nosotros</md-nav-item>
      <md-nav-item md-nav-href="#!/productos" name="productos">Productos</md-nav-item>
@@ -46,16 +47,13 @@ li a:hover {
      <md-nav-item md-nav-href="#!/contacto" name="contacto">Contacto</md-nav-item>
    </md-nav-bar>
    <md-nav-bar flex show-xs hide-lg hide-md>
-     <span flex></span>
-     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="md-primary" style="color: white">
-       Menu
+     <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="icon fa-bars" style="color: #000">
      </md-button>
    </md-nav-bar>
 </md-content>
+
+
 <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
-  <md-toolbar class="md-theme-light">
-    <h2 class="md-toolbar-tools">Menú</h2>
-  </md-toolbar>
   <md-content layout-padding>
     <ul>
         <li><a href="#!/" ng-click="$ctrl.menuClicked()">Inicio</a></b></li>
