@@ -456,9 +456,9 @@
 			height: 2em;
 			font-size: 1em;
 			text-align: center;
-			line-height: 1em;
+			line-height: 2em;
 			border-radius: 100%;
-			box-shadow: 0 0 0 10px #fff, 0 0 0 11px rgba(144, 144, 144, 0.25);
+			box-shadow: 0 0 0 5px #fff, 0 0 0 7px rgba(144, 144, 144, 0.25);
 		}
 
 /* Image */

@@ -1,4 +1,4 @@
-<style>
+<!--<style>
 .footer {
   /*
     position: fixed;
@@ -18,4 +18,9 @@
 </div>
 <div flex layout="row" layout-md="column" layout-xs="column" class="footer">
   <div flex class="content-column-footer-rights">&copy; 2018. DAEN. Diseño, artículos y equipos para negocios. Todos los derechos reservados.</div>
+</div>
+-->
+<div flex layout="column">
+    <app-three-cols data="$ctrl.footer"></app-three-cols>
+    <app-full-content data="$ctrl.copyright"></app-full-content>
 </div>

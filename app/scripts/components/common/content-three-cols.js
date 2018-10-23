@@ -4,8 +4,20 @@
 
     .component('appThreeCols', {
         bindings: {
-          data: '<',
+          data: '=',
         },
-        templateUrl: 'views/common/content-three-cols.html'
-      })
+        templateUrl: 'views/common/content-three-cols.html',
+        controller: componentController
+      });
+    function componentController($scope){
+      var vm = this;
+
+
+      vm.$onInit = function(){
+
+        console.log(vm.data);
+
+      };
+
+    }
 })();

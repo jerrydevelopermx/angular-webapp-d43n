@@ -14,32 +14,79 @@
         var vm = this;
 
         vm.$onInit = function(){
-          vm.news = {
-                      title: 'NOVEDADES',
-                      content: `Equipos nuevos en venta
-Los mejores equipos los tenemos para usted: multifuncionales, lasser jet, copiadoras, workcenter y mas, visita nuestro catalogo...
 
-Equipos remanufacturados en venta
-Contamos con equipos remanufacturados que cuentan con la misma calidad de impresion de los equipos nuevos a un mejor precio.
-posicionamiento
-Tiene un negocio en el que piensa que puede mejorar la entrada de dinero al contar con un equipo pero le falta capital, contamos con financiamiento para usted...`
-          };
+          vm.quienes = {
+                      title: '¿QUIÉNES SOMOS?',
+                      colOne: {
+                              content: [{
+                                         elementType: 'p',
+                                         text: 'DAEN se funda el 19 de enero de 2003, como una inquietud a dar respuesta a los usuarios como una empresa seria, honesta y que cumpla  con las normas de calidad que la sociedad requiere para el buen desempeño en el área de fotocopiado, engargolado y enmicado.'
+                                       },
+                                       {
+                                         elementType:'p',
+                                         text:'Como distribuidor autorizado de Konica Minolta, SHARP y Panasonic ofrecemos servicio integral de venta y renta de equipos multifuncionales. Lo mejor en calidad de impresión, escaneo, digitalización, gran funcionalidad y sistemas de red al más bajo costo por proceso.'
+                                       },
+                                       {
+                                         elementType:'p',
+                                         text:'Ofrecemos todo lo necesario para surtir papelerías y  centros de negocio con: engargoladoras, enmicadoras, cubiertas plásticas, arillo de plástico y metálico marca Zebra y Perfex; equipos de trabajo rudo con las garantías más amplias del mercado. Materiales y consumibles Katun, ACM Tecnologies, entre otros, las líneas de consumibles y fabricantes más grandes a nivel mundial con una gran infraestructura de desarrollo, mejora continua de productos, y distribución.'
+                                       },
+                                       {
+                                         elementType:'p',
+                                         text:'En siete años hemos logrado consolidarnos como una de las empresas de mayor prestigio en nuestra área al proveer a nuestros clientes un sistema continuo de monitoreo lo que nos hace los mejores socios en sus negocios, manteniéndolos a la vanguardia y mejorando sus sistemas día a día.'
+                                       }]
+
+                            }
+                      };
+
           vm.oferta = {
-                                title: 'OFERTA COMERCIAL',
-                                content: `Por que elegirnos
-            Tenemos el compromiso de brindarle los mejores equipos y herramientas para sacar el maximo partido a su negocio
-
-            Le brindamos consultoria en todo momento para usted`
-                              }
-
-          vm.mantenimiento = {
-              title: 'Mantenimiento',
-              class: 'black-background',
-              colOne: {title: 'Preventivo',
-                      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie. Donec aliquam a mauris eu lobortis. In iaculis pretium sem, a placerat mi tempus quis. Morbi pulvinar ex quis luctus aliquam. Phasellus ullamcorper tincidunt metus ut molestie. Praesent non tincidunt dui. Vivamus dui sem, semper in eros vel, laoreet pellentesque ipsum.`},
-              colTwo: {title: 'Correctivo',
-                      content: `Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, vitae maximus augue pretium a. Donec condimentum leo vel egestas pulvinar. Quisque vitae felis sit amet nulla convallis porta et in urna. Vivamus venenatis, ipsum vitae ultricies fermentum, metus nisi ullamcorper lorem, eget tempus ligula odio fermentum odio. Nam condimentum erat auctor ipsum faucibus, at mattis metus luctus. Sed vulputate rutrum dui vel placerat. Aenean congue`}
-          }
+              title: 'OFERTA COMERCIAL',
+              description:'Somos distribuidores de las marcas más reconocidas del mercado',
+              class: 'blue-background',
+              colOne: {
+                      title: 'Mantenimiento Preventivo',
+                      content: [{
+                                 elementType: 'icon',
+                                 class: 'icon rounded medium fa-exclamation-triangle'},
+                                {
+                                 elementType: 'p',
+                                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
+                      }]
+                    },
+              colTwo: {
+                      title: 'Mantenimiento Correctivo',
+                      content: [{
+                                 elementType: 'icon',
+                                 class: 'icon rounded medium fa-ambulance'},
+                                {
+                                 elementType: 'p',
+                                 text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                               }]
+                      }
+              };
+          vm.servicios = {
+              title: 'Servicios',
+              class: '',
+              colOne: {
+                      title: 'Mantenimiento Preventivo',
+                      content: [{
+                                 elementType: 'icon',
+                                 class: 'icon rounded medium fa-exclamation-triangle'},
+                                {
+                                 elementType: 'p',
+                                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
+                      }]
+                    },
+              colTwo: {
+                      title: 'Mantenimiento Correctivo',
+                      content: [{
+                                 elementType: 'icon',
+                                 class: 'icon rounded medium fa-ambulance'},
+                                {
+                                 elementType: 'p',
+                                 text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                               }]
+                      },
+            }
 
 
         };

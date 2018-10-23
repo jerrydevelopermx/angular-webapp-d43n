@@ -39,9 +39,20 @@ md-nav-bar .md-button._md-nav-button.md-unselected {
 
 .content-column {
   padding: 30px;
-  border:1px solid;
   margin:10px;
+  border:1px solid;
 }
+
+.blue-background {
+  background: #3cadd4;
+  color: #fff;
+}
+
+.content-column h3, h2 {
+  text-align: center;
+}
+
+
 .content-column-footer {
   padding: 50px;
   border:1px solid;
@@ -59,10 +70,19 @@ md-nav-bar .md-button._md-nav-button.md-unselected {
   padding: 15px;
 }
 
+.footer ul {
+  background: #192024;
+  color: #666f77;
+}
 .black-background{
   background: #192024;
 }
+.blue-background {
+  background: #3cadd4;
+  color: #fff;
+}
 
+/* ICONS */
 a.icon {
     color: #ffffff;
     font-size: 0.65em;
@@ -76,11 +96,24 @@ a.icon {
     border-radius: 100%;
     color: #ffffff;
     display: inline-block;
-    height: 3.25em;
-    line-height: 3.25em;
+    height: 1.25em;
+    line-height: 1.25em;
     text-align: center;
-    width: 3.25em;
+    width: 1.25em;
 }
-.icon.rounded.fa-twitter {
-    background-color: #2daae4;
-}
+
+			.icon.rounded.fa-twitter {
+				background-color: #2daae4;
+			}
+
+			.icon.rounded.fa-facebook {
+				background-color: #39599f;
+			}
+
+			.icon.rounded.fa-google-plus {
+				background-color: #c91e1f;
+			}
+
+			.icon.rounded.fa-dribbble {
+				background-color: #c4376b;
+			}

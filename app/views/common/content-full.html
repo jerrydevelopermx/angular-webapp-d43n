@@ -1,6 +1,9 @@
-<div flex layout="column" layout-md="column" layout-xs="column">
+<div flex layout="column" layout-md="column" layout-xs="column" class="{{$ctrl.data.class}}">
   <div class="content-column">
     <h2>{{$ctrl.data.title}}</h2>
-        {{$ctrl.data.content}}
+    <span ng-repeat="c in $ctrl.data.colOne.content">
+      <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
+      <p ng-if="c.elementType === 'p'">{{c.text}}</p>
+    </span>
   </div>
 </div>
