@@ -43,25 +43,27 @@
               description:'Somos distribuidores de las marcas más reconocidas del mercado',
               class: 'blue-background',
               colOne: {
-                      title: 'Mantenimiento Preventivo',
+                      title: 'KONICA MINOLTA',
                       content: [{
-                                 elementType: 'icon',
-                                 class: 'icon rounded medium fa-exclamation-triangle'},
-                                {
                                  elementType: 'p',
                                  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
                       }]
                     },
               colTwo: {
-                      title: 'Mantenimiento Correctivo',
+                      title: 'BROTHER',
                       content: [{
-                                 elementType: 'icon',
-                                 class: 'icon rounded medium fa-ambulance'},
-                                {
                                  elementType: 'p',
                                  text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
                                }]
-                      }
+                      },
+                colThree: {
+                        title: 'SHARP',
+                        content: [{
+                                  elementType: 'p',
+                                  text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                                  }]
+                              }
+
               };
           vm.servicios = {
               title: 'Servicios',
