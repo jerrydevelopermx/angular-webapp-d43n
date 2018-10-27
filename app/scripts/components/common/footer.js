@@ -15,7 +15,8 @@
 
         vm.$onInit = function(){
           vm.footer = {
-              title: '',
+              title: null,
+              description: null,
               class: 'black-background',
               colOne: {
                       title: '',

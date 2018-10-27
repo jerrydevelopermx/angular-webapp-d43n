@@ -1,16 +1,17 @@
 <div flex layout="column" class="{{$ctrl.data.class}}">
-  <div flex layout="row" layout-md="column" layout-xs="column" class="content-column">
+  <div ng-if="$ctrl.data.title != null" flex layout="column" layout-md="column" layout-xs="column" class="{{$ctrl.data.styles}}">
     <h2>{{$ctrl.data.title}}</h2>
   </div>
-  <div flex layout="row" layout-md="column" layout-xs="column" class="content-column">
+  <div ng-if="$ctrl.data.description != null" flex layout="column" layout-md="column" layout-xs="column" class="subcontent-title">
     {{$ctrl.data.description}}
   </div>
   <div flex layout="row" layout-md="column" layout-xs="column">
-    <div flex class="content-column">
+    <div flex class="content-column" >
       <h4>{{$ctrl.data.colOne.title}}</h4>
         <span ng-repeat="c in $ctrl.data.colOne.content">
           <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
           <p ng-if="c.elementType === 'p'">{{c.text}}</p>
+          <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
 
         </span>
       <!--<ul>
@@ -20,11 +21,12 @@
       </ul>-->
     </div>
 
-    <div flex class="content-column">
+    <div flex class="content-column" >
       <h4>{{$ctrl.data.colTwo.title}}</h4>
       <span ng-repeat="c in $ctrl.data.colTwo.content">
         <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
         <p ng-if="c.elementType === 'p'">{{c.text}}</p>
+        <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
       </span>
 <!--
       <ul>
@@ -40,6 +42,7 @@
       <span ng-repeat="c in $ctrl.data.colThree.content">
         <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
         <p ng-if="c.elementType === 'p'">{{c.text}}</p>
+        <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
       </span>
       <!--
       <p>Contáctanos a traves de nuestras redes sociales</p>

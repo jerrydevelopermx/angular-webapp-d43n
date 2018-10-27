@@ -17,11 +17,28 @@ body {
     body{
         font-size: 12pt;
     }
+
 }
 
 @media all and (max-width: 599px) and (min-width: 320px) {
     body{
         font-size: 14pt;
+    }
+    .content-column {
+      padding: 10px;
+      margin:5px;
+      /*border:1px solid;*/
+    }
+
+}
+@media (max-width: 599px) {
+    body{
+        font-size: 14pt;
+    }
+    .content-column {
+      padding: 10px;
+      margin:5px;
+      /*border:1px solid;*/
     }
 
 }
@@ -40,7 +57,7 @@ md-nav-bar .md-button._md-nav-button.md-unselected {
 .content-column {
   padding: 30px;
   margin:10px;
-  border:1px solid;
+  /*border:1px solid;*/
 }
 
 .blue-background {
@@ -52,6 +69,9 @@ md-nav-bar .md-button._md-nav-button.md-unselected {
   text-align: center;
 }
 
+.blue-background h3, h2{
+  color: #fff;
+}
 
 .content-column-footer {
   padding: 50px;
@@ -117,3 +137,23 @@ a.icon {
 			.icon.rounded.fa-dribbble {
 				background-color: #c4376b;
 			}
+
+       .logo-partner {
+         width: 200px;
+
+      }
+      .subcontent-title{
+        text-align: center;
+        padding: 10px;
+        margin:10px;
+        /*border: 1px solid;*/
+      }
+      .subcontent-title-blue h2{
+        color: #ffffff !important;
+        margin: 0;
+      }
+
+      .subcontent-title-white h2{
+        color: #666f77 !important;
+        margin: 0;
+      }

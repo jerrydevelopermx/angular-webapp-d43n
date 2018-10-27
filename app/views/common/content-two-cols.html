@@ -1,8 +1,10 @@
 <div flex layout="column" class="{{$ctrl.data.class}}">
+  <div ng-if="$ctrl.data.title != null" flex layout="column" layout-md="column" layout-xs="column" class="{{$ctrl.data.styles}}">
     <h2>{{$ctrl.data.title}}</h2>
+  </div>
     <div flex layout="row" layout-md="column" layout-xs="column" >
 
-      <div flex class="content-column">
+      <div flex class="content-column {{$ctrl.data.styles}}">
         <h3>{{$ctrl.data.colOne.title}}</h3>
         <span ng-repeat="c in $ctrl.data.colOne.content">
           <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
@@ -10,7 +12,7 @@
         </span>
       </div>
 
-      <div flex class="content-column">
+      <div flex class="content-column {{$ctrl.data.styles}}">
         <h3>{{$ctrl.data.colTwo.title}}</h3>
           <span ng-repeat="c in $ctrl.data.colTwo.content">
             <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
