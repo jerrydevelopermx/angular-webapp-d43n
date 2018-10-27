@@ -114,8 +114,11 @@ md-nav-bar {
 }
 .black-background{
   background: #192024;
+  margin: 10px
 }
-
+.footer-div{
+  padding: 5px; 
+}
 
 /* ICONS */
 a.icon {

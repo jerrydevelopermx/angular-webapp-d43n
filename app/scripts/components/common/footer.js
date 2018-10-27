@@ -38,6 +38,7 @@
               colTwo: {
                       title: 'Servicios',
                       class: 'ul-footer',
+                      styles: 'footer-div',
                       content: [{
                                   elementType: 'ul',
                                   list: [{
@@ -82,6 +83,7 @@
 
           vm.copyright = {
             class: 'black-background',
+            styles: 'footer-div',
             colOne: {
                     content: [{
                                elementType: 'p',
