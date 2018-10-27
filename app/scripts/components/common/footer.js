@@ -66,7 +66,7 @@
                                                   {
                                                     label:'',
                                                     class: 'icon rounded medium fa-twitter'
-                                                  },
+                                                  }/*,
                                                   {
                                                     label:'',
                                                     class: 'icon rounded medium fa-youtube'
@@ -74,7 +74,7 @@
                                                   {
                                                     label:'',
                                                     class: 'icon rounded medium fa-pinterest'
-                                                  }
+                                                  }*/
                                                 ]
 
                                         }]

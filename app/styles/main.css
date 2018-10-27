@@ -75,7 +75,15 @@ md-nav-bar {
     position: relative;
 }
 
-
+md-nav-bar .md-nav-bar {
+      color: #39599f;
+      margin-top: 20px;
+      border: 0px;
+      font-size: 20pt;
+}
+.sidemenu.md-button{
+  font-size: 25px;
+}
 .blue-background {
   background: #3cadd4;
   color: #fff;
