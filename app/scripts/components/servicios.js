@@ -14,16 +14,54 @@
         var vm = this;
 
         vm.$onInit = function(){
-          vm.servicios = {
-                      title: 'CREA, GESTIONA, INNOVA',
+          vm.documentos = {
+                      title: 'Redes de gestión de documentos',
                       colOne: {
                               content: [{
                                          elementType: 'p',
-                                         text: 'Con la más alta tecnología en sistemas de gestión de documentos, las marcas más innovadoras del mercado y el compromiso para hacer crecer tu negocio, te ofrecemos:'
+                                         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie. Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus,'
                                        }]
 
                             }
                       };
+            vm.asesoramiento = {
+                        title: 'Asesoramiento',
+                        class: 'content-column blue-background',
+                        styles: 'subcontent-title-blue',
+
+                                  colOne: {
+                                          content: [{
+                                                     elementType: 'p',
+                                                     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie. Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus,'
+                                                   }]
+
+                                        }
+                                  };
+          vm.mantenimiento = {
+              title: 'Mantenimiento',
+              styles: 'subcontent-title-white',
+              class: 'content-column',
+              colOne: {
+                      title: 'Preventivo',
+                      content: [/*{
+                                 elementType: 'icon',
+                                 class: 'icon rounded medium fa-exclamation-triangle'},*/
+                                {
+                                 elementType: 'p',
+                                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
+                      }]
+                    },
+              colTwo: {
+                      title: 'Correctivo',
+                      content: [/*{
+                                 elementType: 'icon',
+                                 class: 'icon rounded medium fa-ambulance'},*/
+                                {
+                                 elementType: 'p',
+                                 text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                               }]
+                      }
+            }
 
         }
       }

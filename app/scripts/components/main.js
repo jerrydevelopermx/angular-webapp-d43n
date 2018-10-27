@@ -66,7 +66,7 @@
               styles: 'subcontent-title-white',
               class: 'content-column',
               colOne: {
-                      title: 'Mantenimiento Preventivo',
+                      title: 'Redes de gestión de documentos',
                       content: [/*{
                                  elementType: 'icon',
                                  class: 'icon rounded medium fa-exclamation-triangle'},*/
@@ -76,7 +76,7 @@
                       }]
                     },
               colTwo: {
-                      title: 'Mantenimiento Correctivo',
+                      title: 'Asesoramiento',
                       content: [/*{
                                  elementType: 'icon',
                                  class: 'icon rounded medium fa-ambulance'},*/
@@ -85,6 +85,13 @@
                                  text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
                                }]
                       },
+                colThree: {
+                        title: 'Mantenimiento',
+                        content: [{
+                         elementType: 'p',
+                         text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                          }]
+                        }
             }
 
 
