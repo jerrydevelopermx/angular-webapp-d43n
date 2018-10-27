@@ -54,22 +54,29 @@
                       },
                       colThree: {
                               title: '¡Síguenos!',
+                              centered: true,
                               content: [{
-                                         elementType: 'icon',
-                                         class: 'icon rounded medium fa-facebook'
-                                       },
-                                       {
-                                          elementType: 'icon',
-                                          class: 'icon rounded medium fa-twitter'
-                                        },
-                                        {
-                                           elementType: 'icon',
-                                           class: 'icon rounded medium fa-youtube'
-                                         },
-                                         {
-                                            elementType: 'icon',
-                                            class: 'icon rounded medium fa-pinterest'
-                                          }]
+                                          elementType: 'ul',
+                                          class: 'icons',
+                                          list: [{
+                                                    label:'',
+                                                    class:'icon rounded medium fa-facebook'
+                                                  },
+                                                  {
+                                                    label:'',
+                                                    class: 'icon rounded medium fa-twitter'
+                                                  },
+                                                  {
+                                                    label:'',
+                                                    class: 'icon rounded medium fa-youtube'
+                                                  },
+                                                  {
+                                                    label:'',
+                                                    class: 'icon rounded medium fa-pinterest'
+                                                  }
+                                                ]
+
+                                        }]
                               }
             };
 
@@ -79,7 +86,8 @@
                     content: [{
                                elementType: 'p',
                                text: '2018. DAEN. Todos los derechos reservados. '
-                    }]
+                    }],
+                    centered: true
                   }
           }
 

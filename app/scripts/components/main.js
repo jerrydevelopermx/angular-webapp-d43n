@@ -37,6 +37,7 @@
               styles: 'subcontent-title-blue',
               colOne: {
                       title: '',
+                      centered: true,
                       content: [{
                                  elementType: 'img',
                                  src: 'images/konica-minolta.png',
@@ -45,6 +46,7 @@
                     },
               colTwo: {
                       title: '',
+                      centered: true,
                       content: [{
                                  elementType: 'img',
                                  src: 'images/oki.png',
@@ -53,6 +55,7 @@
                       },
                 colThree: {
                         title: '',
+                        centered: true,
                         content: [{
                                    elementType: 'img',
                                    src: 'images/zebra.png',

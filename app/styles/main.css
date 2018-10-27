@@ -62,19 +62,27 @@ md-nav-bar .md-button._md-nav-button.md-unselected {
   color: #555f66;
 }
 
-
+md-nav-bar {
+    /* border-width: 0 0 1px; */
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    position: relative;
+}
 .blue-background {
   background: #3cadd4;
   color: #fff;
 }
 
-.content-column h3, h2, h4 {
+.blue-background h4, .blue-background h2, .blue-background h4{
+  color: #fff;
+}
+
+.content-column h3, .content-column h2, .content-column h4 {
   text-align: center;
 }
 
-.blue-background h3, h2, h4{
-  color: #fff;
-}
+
 
 .content-column-footer {
   padding: 50px;
@@ -99,12 +107,8 @@ md-nav-bar .md-button._md-nav-button.md-unselected {
 }
 .black-background{
   background: #192024;
-  text-align: center;
 }
-.blue-background {
-  background: #3cadd4;
-  color: #fff;
-}
+
 
 /* ICONS */
 a.icon {
@@ -124,7 +128,6 @@ a.icon {
     line-height: 1.25em;
     text-align: center;
     width: 1.25em;
-    margin:10px;
 }
 
 .icon.rounded.fa-twitter {
@@ -164,7 +167,7 @@ a.icon {
     margin: 0;
 }
 
-.ul-footer{
+ul .ul-footer{
   list-style-type: none;
 }
 
@@ -187,4 +190,7 @@ a.icon {
     text-align: center;
     padding: 16px;
     text-decoration: none;
+}
+.centered {
+  text-align: center;
 }

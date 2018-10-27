@@ -93,14 +93,17 @@
               styles: 'subcontent-title-white',
               colOne: {
                       title: 'Empresa socialmente responsable',
+                      centered: true,
                       content: [{
                                  elementType: 'img',
                                  src: 'images/esr.png',
                                  class: 'logo-partner'
+
                       }]
                     },
               colTwo: {
                       title: 'Mejora continua',
+                      centered: true,
                       content: [{
                                  elementType: 'img',
                                  src: 'images/mejora.png',
@@ -109,6 +112,7 @@
                       },
                 colThree: {
                         title: 'Rentabilidad',
+                        centered: true,
                         content: [{
                                    elementType: 'img',
                                    src: 'images/rentabilidad.png',
@@ -124,6 +128,7 @@
               styles: 'subcontent-title-white',
               colOne: {
                       title: 'Compromiso',
+                      centered: true,
                       content: [{
                                  elementType: 'img',
                                  src: 'images/compromiso.png',
@@ -132,6 +137,7 @@
                     },
               colTwo: {
                       title: 'Alianzas estratégicas',
+                      centered: true,
                       content: [{
                                  elementType: 'img',
                                  src: 'images/alianzas.png',

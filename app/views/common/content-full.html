@@ -1,13 +1,13 @@
 <div flex layout="column" layout-md="column" layout-xs="column" class="{{$ctrl.data.class}}">
   <div class="content-column {{$ctrl.data.styles}}">
     <h2>{{$ctrl.data.title}}</h2>
-    <span ng-repeat="c in $ctrl.data.colOne.content">
+    <div ng-repeat="c in $ctrl.data.colOne.content" ng-class="{'centered': $ctrl.data.colOne.centered }">
       <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
       <p ng-if="c.elementType === 'p'">{{c.text}}</p>
       <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
       <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
         <li ng-repeat="l in c.list">{{l.label}}</li>
       </ul>
-    </span>
+    </div>
   </div>
 </div>
