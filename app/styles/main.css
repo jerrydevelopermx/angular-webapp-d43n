@@ -20,7 +20,6 @@ body {
       content: '';
       background: url('../images/Logo-DAEN-Final.png');
       height:50px;
-      /*content: url('../images/Logo-DAEN-Final.png');*/
       padding: 10px;
       margin:10px;
     }
@@ -56,9 +55,10 @@ body {
       margin:5px;
       /*border:1px solid;*/
     }
-    div.logo{
+    div.logo:before {
+      content: '';
+      background: url('../images/Logo-DAEN-Final.png');
       height:80px;
-      content: url('../images/Logo-DAEN-Final.png');
       padding: 10px;
       margin:10px;
     }
