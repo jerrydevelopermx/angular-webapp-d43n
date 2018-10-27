@@ -12,7 +12,9 @@
           <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
           <p ng-if="c.elementType === 'p'">{{c.text}}</p>
           <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
-
+          <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
+            <li ng-repeat="l in c.list">{{l.label}}</li>
+          </ul>
         </span>
       <!--<ul>
         <li>Konica Minolta</li>
@@ -27,6 +29,9 @@
         <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
         <p ng-if="c.elementType === 'p'">{{c.text}}</p>
         <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
+        <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
+          <li ng-repeat="l in c.list">{{l.label}}</li>
+        </ul>
       </span>
 <!--
       <ul>
@@ -43,6 +48,9 @@
         <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
         <p ng-if="c.elementType === 'p'">{{c.text}}</p>
         <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
+        <ul ng-if="c.elementType === 'ul'">
+          <li ng-repeat="l in c.list">{{l.label}}</li>
+        </ul>
       </span>
       <!--
       <p>Contáctanos a traves de nuestras redes sociales</p>

@@ -19,21 +19,41 @@
               description: null,
               class: 'black-background',
               colOne: {
-                      title: '',
+                      title: 'Productos',
+                      class: 'ul-footer',
                       content: [{
-                                 elementType: 'p',
-                                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie. '
-                      }]
+                                  elementType: 'ul',
+                                  list: [{
+                                            label:'Konica Minolta'
+                                          },
+                                          {
+                                            label:'OKI'
+                                          },
+                                          {
+                                            label:'Zebra'
+                                          }]
+
+                                }]
                     },
               colTwo: {
-                      title: '',
+                      title: 'Servicios',
+                      class: 'ul-footer',
                       content: [{
-                                 elementType: 'p',
-                                 text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
-                               }]
+                                  elementType: 'ul',
+                                  list: [{
+                                            label:'Gestión de documentos'
+                                          },
+                                          {
+                                            label:'Asesoramiento'
+                                          },
+                                          {
+                                            label:'Mantenimiento'
+                                          }]
+
+                                }]
                       },
                       colThree: {
-                              title: '',
+                              title: '¡Síguenos en nuestras redes sociales!',
                               content: [{
                                          elementType: 'p',
                                          text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam '

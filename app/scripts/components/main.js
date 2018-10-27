@@ -47,7 +47,7 @@
                       title: '',
                       content: [{
                                  elementType: 'img',
-                                 src: 'images/brother.png',
+                                 src: 'images/oki.png',
                                  class: 'logo-partner'
                                }]
                       },
@@ -55,7 +55,7 @@
                         title: '',
                         content: [{
                                    elementType: 'img',
-                                   src: 'images/sharp.png',
+                                   src: 'images/zebra.png',
                                    class: 'logo-partner'
                                  }]
                         }

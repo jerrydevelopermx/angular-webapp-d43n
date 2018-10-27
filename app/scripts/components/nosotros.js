@@ -88,7 +88,7 @@
           };
           vm.objetivos = {
               title: 'OBJETIVOS',
-              description: null,
+              description: 'En DAEN el cliente es nuestra razón de ser y estamos comprometidos con su total satisfacción, contando con un equipo de personas motivadas a servir mediante un proceso de mejora continua, ofreciendo productos innovadores con calidad en el mercado.',
               class: 'content-column',
               styles: 'subcontent-title-white',
               colOne: {

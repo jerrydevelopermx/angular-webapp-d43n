@@ -45,7 +45,7 @@ body {
 
 div.logo{
   height:80px;
-  content: url('../images/Logo-DAEN-250.png');
+  content: url('../images/logo bien-03.png');
   padding: 10px;
   margin:10px;
 }
@@ -157,3 +157,7 @@ a.icon {
         color: #666f77 !important;
         margin: 0;
       }
+.ul-footer li{
+  color: #555f66 !important;
+  background: #192024
+}
