@@ -16,9 +16,11 @@ body {
       margin:10px;
       /*border:1px solid;*/
     }
-    div.logo{
+    div.logo:before {
+      content: '';
+      background: url('../images/Logo-DAEN-Final.png');
       height:50px;
-      content: url('../images/Logo-DAEN-Final.png');
+      /*content: url('../images/Logo-DAEN-Final.png');*/
       padding: 10px;
       margin:10px;
     }
