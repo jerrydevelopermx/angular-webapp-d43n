@@ -4,6 +4,10 @@
     <span ng-repeat="c in $ctrl.data.colOne.content">
       <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
       <p ng-if="c.elementType === 'p'">{{c.text}}</p>
+      <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
+      <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
+        <li ng-repeat="l in c.list">{{l.label}}</li>
+      </ul>
     </span>
   </div>
 </div>

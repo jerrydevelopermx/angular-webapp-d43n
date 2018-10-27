@@ -8,7 +8,7 @@
   <div flex layout="row" layout-md="column" layout-xs="column">
     <div flex class="content-column" >
       <h4>{{$ctrl.data.colOne.title}}</h4>
-        <span ng-repeat="c in $ctrl.data.colOne.content">
+        <span ng-repeat="c in $ctrl.data.colOne.content" style="text-align:center !important">
           <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
           <p ng-if="c.elementType === 'p'">{{c.text}}</p>
           <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>

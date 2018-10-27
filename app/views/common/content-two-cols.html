@@ -4,19 +4,27 @@
   </div>
     <div flex layout="row" layout-md="column" layout-xs="column" >
 
-      <div flex class="content-column {{$ctrl.data.styles}}">
-        <h3>{{$ctrl.data.colOne.title}}</h3>
+      <div flex class="content-column">
+        <h4>{{$ctrl.data.colOne.title}}</h4>
         <span ng-repeat="c in $ctrl.data.colOne.content">
           <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
           <p ng-if="c.elementType === 'p'">{{c.text}}</p>
+          <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
+          <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
+            <li ng-repeat="l in c.list">{{l.label}}</li>
+          </ul>
         </span>
       </div>
 
-      <div flex class="content-column {{$ctrl.data.styles}}">
-        <h3>{{$ctrl.data.colTwo.title}}</h3>
+      <div flex class="content-column">
+        <h4>{{$ctrl.data.colTwo.title}}</h4>
           <span ng-repeat="c in $ctrl.data.colTwo.content">
             <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
             <p ng-if="c.elementType === 'p'">{{c.text}}</p>
+            <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
+            <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
+              <li ng-repeat="l in c.list">{{l.label}}</li>
+            </ul>
           </span>
       </div>
     </div>

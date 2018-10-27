@@ -53,11 +53,23 @@
                                 }]
                       },
                       colThree: {
-                              title: '¡Síguenos en nuestras redes sociales!',
+                              title: '¡Síguenos!',
                               content: [{
-                                         elementType: 'p',
-                                         text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam '
-                                       }]
+                                         elementType: 'icon',
+                                         class: 'icon rounded medium fa-facebook'
+                                       },
+                                       {
+                                          elementType: 'icon',
+                                          class: 'icon rounded medium fa-twitter'
+                                        },
+                                        {
+                                           elementType: 'icon',
+                                           class: 'icon rounded medium fa-youtube'
+                                         },
+                                         {
+                                            elementType: 'icon',
+                                            class: 'icon rounded medium fa-pinterest'
+                                          }]
                               }
             };
 
