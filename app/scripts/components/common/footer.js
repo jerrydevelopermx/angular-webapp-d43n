@@ -78,7 +78,7 @@
 
                                   }]
                       }],
-              footer : {
+              bottom : {
                 class: '',
                 content: [{
                            elementType: 'p',

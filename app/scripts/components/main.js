@@ -33,7 +33,20 @@
                                            elementType:'p',
                                            text:'En quince años hemos logrado consolidarnos como una de las empresas de mayor prestigio en nuestra área al proveer a nuestros clientes un sistema continuo de monitoreo, lo que nos hace los mejores socios en sus negocios, manteniéndolos a la vanguardia y mejorando sus sistemas día a día.'
                                          }]
-                              }]
+                              }],
+                      bottom : {
+                        class: '',
+                        content: [{
+                                    elementType: 'ul',
+                                    class: 'actions centered',
+                                    list: [{
+                                              label:'Ver más',
+                                              class:'button medium',
+                                              url: 'nosotros'
+                                          }]
+
+                                  }]
+                      }
                   };
 
           vm.oferta = {
@@ -57,7 +70,7 @@
                                }]
                     },
                     {
-                      title: '',
+                      title: 'Asesoramiento',
                       class: 'content-column',
                       centered: true,
                       content: [{
@@ -75,41 +88,69 @@
                                  src: 'images/zebra.png',
                                  class: 'logo-partner'
                                }]
-                    }]
+                    }],
+              bottom : {
+                class: '',
+                content: [{
+                            elementType: 'ul',
+                            class: 'actions centered',
+                            list: [{
+                                      label:'Ver más',
+                                      class:'button medium'
+                                  }]
+
+                          }]
+              }
           };
 
           vm.servicios = {
-              title: 'Servicios',
-              styles: 'subcontent-title-white',
-              class: 'content-column',
-              colOne: {
+            class: 'content-column',
+            title: {
+                    text: 'SERVICIOS',
+                    class: 'subcontent-title-white'
+                  },
+            description: null,
+            columns: [{
                       title: 'Redes de gestión de documentos',
-                      content: [/*{
-                                 elementType: 'icon',
-                                 class: 'icon rounded medium fa-exclamation-triangle'},*/
-                                {
-                                 elementType: 'p',
-                                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
-                      }]
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                  elementType: 'p',
+                                  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
+                                }]
                     },
-              colTwo: {
+                    {
                       title: 'Asesoramiento',
-                      content: [/*{
-                                 elementType: 'icon',
-                                 class: 'icon rounded medium fa-ambulance'},*/
-                                {
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
                                  elementType: 'p',
                                  text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
                                }]
-                      },
-                colThree: {
-                        title: 'Mantenimiento',
-                        content: [{
-                         elementType: 'p',
-                         text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                    },
+                    {
+                      title: 'Mantenimiento',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                  elementType: 'p',
+                                  text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                                }]
+                    }],
+              bottom : {
+                class: '',
+                content: [{
+                            elementType: 'ul',
+                            class: 'actions centered',
+                            list: [{
+                                      label:'Ver más',
+                                      class:'button medium',
+                                      url:'servicios'
+                                  }]
+
                           }]
-                        }
-            }
+              }
+          };
 
 
         };
