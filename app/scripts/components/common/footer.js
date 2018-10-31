@@ -15,12 +15,13 @@
 
         vm.$onInit = function(){
           vm.footer = {
-              title: null,
-              description: null,
-              class: 'black-background',
-              colOne: {
+            class: 'content-column-footer black-background',
+            title: null,
+            description: null,
+            columns: [{
                       title: 'Productos',
-                      class: 'ul-footer',
+                      class: '',
+                      centered: false,
                       content: [{
                                   elementType: 'ul',
                                   list: [{
@@ -35,10 +36,9 @@
 
                                 }]
                     },
-              colTwo: {
-                      title: 'Servicios',
-                      class: 'ul-footer',
-                      styles: 'footer-div',
+                    { title: 'Servicios',
+                      class: '',
+                      centered: false,
                       content: [{
                                   elementType: 'ul',
                                   list: [{
@@ -49,49 +49,43 @@
                                           },
                                           {
                                             label:'Mantenimiento'
-                                          }]
-
+                                        }]
                                 }]
                       },
-                      colThree: {
-                              title: '¡Síguenos!',
-                              centered: true,
-                              content: [{
-                                          elementType: 'ul',
-                                          class: 'icons',
-                                          list: [{
-                                                    label:'',
-                                                    class:'icon rounded medium fa-facebook'
-                                                  },
-                                                  {
-                                                    label:'',
-                                                    class: 'icon rounded medium fa-twitter'
-                                                  }/*,
-                                                  {
-                                                    label:'',
-                                                    class: 'icon rounded medium fa-youtube'
-                                                  },
-                                                  {
-                                                    label:'',
-                                                    class: 'icon rounded medium fa-pinterest'
-                                                  }*/
-                                                ]
+                      { title: '¡Síguenos!',
+                        class: '',
+                        centered: true,
+                        content: [{
+                                    elementType: 'ul',
+                                    class: 'icons',
+                                    list: [{
+                                              label:'',
+                                              class:'icon rounded medium fa-facebook'
+                                            },
+                                            {
+                                              label:'',
+                                              class: 'icon rounded medium fa-twitter'
+                                            }/*,
+                                            {
+                                              label:'',
+                                              class: 'icon rounded medium fa-youtube'
+                                            },
+                                            {
+                                              label:'',
+                                              class: 'icon rounded medium fa-pinterest'
+                                            }*/
+                                          ]
 
-                                        }]
-                              }
-            };
-
-          vm.copyright = {
-            class: 'black-background',
-            styles: 'footer-div',
-            colOne: {
-                    content: [{
-                               elementType: 'p',
-                               text: '2018. DAEN. Todos los derechos reservados. '
-                    }],
-                    centered: true
-                  }
-          }
+                                  }]
+                      }],
+              footer : {
+                class: '',
+                content: [{
+                           elementType: 'p',
+                           text: '2018. DAEN. Diseño, artículos y equipos para negocios. Todos los derechos reservados. '
+                }]
+              }
+          };
 
         }
       }

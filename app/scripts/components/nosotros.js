@@ -86,7 +86,9 @@
                       }
 
           };
-          vm.objetivos = {
+
+
+          vm.objetivos4 = {
               title: 'OBJETIVOS',
               description: 'En DAEN el cliente es nuestra razón de ser y estamos comprometidos con su total satisfacción, contando con un equipo de personas motivadas a servir mediante un proceso de mejora continua, ofreciendo productos innovadores con calidad en el mercado.',
               class: 'content-column',
@@ -145,6 +147,70 @@
                                }]
                       }
 
+          };
+
+          vm.objetivos = {
+            class: 'content-column',
+            title: {
+                    text: 'OBJETIVOS',
+                    class: 'subcontent-title-white'
+                  },
+            description: {
+                          text: 'En DAEN el cliente es nuestra razón de ser y estamos comprometidos con su total satisfacción, contando con un equipo de personas motivadas a servir mediante un proceso de mejora continua, ofreciendo productos innovadores con calidad en el mercado.',
+                          class: 'subcontent-title justified'
+                        },
+            columns: [{
+                      title: 'Empresa socialmente responsable',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                 elementType: 'img',
+                                 src: 'images/esr.png',
+                                 class: 'logo-partner'
+
+                               }]
+                    },
+                    {
+                      title: 'Mejora continua',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                  elementType: 'img',
+                                  src: 'images/mejora.png',
+                                  class: 'logo-partner'
+                                }]
+                    },
+                    {
+                      title: 'Rentabilidad',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                        elementType: 'img',
+                        src: 'images/rentabilidad.png',
+                        class: 'logo-partner'
+                                }]
+                    },
+                    {
+                      title: 'Compromiso',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                        elementType: 'img',
+                        src: 'images/compromiso.png',
+                        class: 'logo-partner'
+                              }]
+                    },
+                    {
+                      title: 'Alianzas estratégicas',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                        elementType: 'img',
+                        src: 'images/alianzas.png',
+                        class: 'logo-partner'
+                              }]
+                    }
+                  ]
           };
 
         }

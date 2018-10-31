@@ -2,10 +2,12 @@
   <div ng-if="$ctrl.data.title != null" flex layout="column" layout-md="column" layout-xs="column" class="{{$ctrl.data.styles}}">
     <h2>{{$ctrl.data.title}}</h2>
   </div>
-    <div flex layout="row" layout-md="column" layout-xs="column" >
 
+    <div flex layout="row" layout-md="column" layout-xs="column" >
       <div flex class="content-column">
         <h4>{{$ctrl.data.colOne.title}}</h4>
+        <element-content data="$ctrl.data.colOne"></element-content>
+        <!--
         <div ng-repeat="c in $ctrl.data.colOne.content" ng-class="{'centered': $ctrl.data.colOne.centered }">
           <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
           <p ng-if="c.elementType === 'p'" class="justified">{{c.text}}</p>
@@ -13,24 +15,20 @@
           <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
             <li ng-repeat="l in c.list">{{l.label}}</li>
           </ul>
-        </div>
+        </div>-->
       </div>
 
       <div flex class="content-column">
         <h4>{{$ctrl.data.colTwo.title}}</h4>
-          <div ng-repeat="c in $ctrl.data.colTwo.content" ng-class="{'centered': $ctrl.data.colTwo.centered }">
+        <element-content data="$ctrl.data.colTwo"></element-content>
+          <!--<div ng-repeat="c in $ctrl.data.colTwo.content" ng-class="{'centered': $ctrl.data.colTwo.centered }">
             <li ng-if="c.elementType === 'icon'" class="{{c.class}}"></li>
             <p ng-if="c.elementType === 'p'" class="justified">{{c.text}}</p>
             <img ng-if="c.elementType === 'img'" src="{{c.src}}" class="{{c.class}}"/>
             <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
               <li ng-repeat="l in c.list">{{l.label}}</li>
             </ul>
-          </div>
+          </div>-->
       </div>
     </div>
 </div>
-<!--
-  <li class="icon fa-cog major"> </li>
-  <li class="icon rounded fa-twitter"> <a> </a></li>
-  <li class="icon rounded fa-bars"> <a> </a></li>
--->

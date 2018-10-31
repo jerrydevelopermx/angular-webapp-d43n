@@ -15,7 +15,7 @@
 
       vm.$onInit = function(){
 
-        console.log(vm.data);
+        //console.log(vm.data);
 
       };
 

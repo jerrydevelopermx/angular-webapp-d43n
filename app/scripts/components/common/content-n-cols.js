@@ -2,11 +2,11 @@
     'use strict';
     angular.module('webApp')
 
-    .component('appTwoCols', {
+    .component('appNCols', {
         bindings: {
           data: '=',
         },
-        templateUrl: 'views/common/content-two-cols.html',
+        templateUrl: 'views/common/content-n-cols.html',
         controller: componentController
       });
 
