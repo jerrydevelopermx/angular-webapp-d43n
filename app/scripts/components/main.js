@@ -96,7 +96,8 @@
                             class: 'actions centered',
                             list: [{
                                       label:'Ver más',
-                                      class:'button medium'
+                                      class:'button medium',
+                                      url:'productos'
                                   }]
 
                           }]

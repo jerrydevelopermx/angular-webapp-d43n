@@ -1,4 +1,47 @@
-<div>
-    <h1>PRODUCTOS PAGE</h1>
-    <app-catalog></app-catalog>
+<div flex layout="column">
+  <div>{{$ctrl.productos.description}}</div>
+
+
+    <md-content>
+<!--
+      <div >
+        <md-sidenav
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('xs')"
+        md-whiteframe="4">
+
+          <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Marcas</h1>
+          </md-toolbar>
+          <md-content layout-padding>
+            <md-button ng-click="close()" class="md-primary" hide-gt-md>
+              Close Sidenav Left
+            </md-button>
+            <p hide show-gt-md>
+              This sidenav is locked open on your device. To go back to the default behavior,
+              narrow your display.
+            </p>
+          </md-content>
+
+        </md-sidenav>
+      </div>
+-->
+      <md-tabs  md-center-tabs="true" md-dynamic-height md-border-bottom>
+        <md-tab ng-repeat="tab in $ctrl.productos.tabs">
+          <md-tab-label>
+            <md-button>
+              <img src="{{tab.img}}" style="height: 20px;">
+            </md-button>
+          </md-tab-label>
+          <md-tab-body>
+            <p class="md-padding">
+              {{tab.text}}
+              <app-content-grid data="$ctrl.tiles"></app-content-grid>
+            </p>
+          </md-tab-body>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+
 </div>

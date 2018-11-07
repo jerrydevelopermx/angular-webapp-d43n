@@ -221,3 +221,10 @@ a.icon {
   text-align: justify;
   text-justify: inter-word;
 }
+
+md-pagination-wrapper {
+    height: 80px;
+}
+md-tab-item {
+    padding: 5px 25px !important;
+}
