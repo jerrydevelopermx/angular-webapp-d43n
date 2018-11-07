@@ -20,14 +20,14 @@
               for (var i = 0; i < 12; i++) {
                 vm.tiles.push({
                   color: randomColor(),
-                  colspan: randomSpan(),
-                  rowspan: randomSpan()
+                  
                 });
               }
 
           function randomColor() {
             return COLORS[Math.floor(Math.random() * COLORS.length)];
           }
+
 
           function randomSpan() {
             var r = Math.random();
@@ -40,31 +40,35 @@
             }
           }
 
+          function randomProducts(){
+
+          }
+
           vm.productos = {
             description: ' Hola, aqui va la descripción',
             tabs: [{ text: 'Aqui va uno',
                      img : 'images/konica-minolta.png',
-                     products: []
+                     products: vm.tiles
                 },
                 { text: 'Aqui va uno',
                          img : 'images/oki.png',
-                         products: []
+                         products: vm.tiles
                 },
                 { text: 'Aqui va otro',
                          img : 'images/zebra.png',
-                         products: []
+                         products: vm.tiles
                 },
                 { text: 'Aqui va otro mas',
                          img : 'images/brother.png',
-                         products: []
+                         products: vm.tiles
                 },
                 { text: 'Aqui va jaaa',
                          img : 'images/esr.png',
-                         products: []
+                         products: vm.tiles
                 },
                 { text: 'Aqui va tsss',
                          img : 'images/mejora.png',
-                         products: []
+                         products: vm.tiles
                 },
               ]
           }

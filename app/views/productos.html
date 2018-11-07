@@ -27,7 +27,7 @@
         </md-sidenav>
       </div>
 -->
-      <md-tabs  md-center-tabs="true" md-dynamic-height md-border-bottom>
+      <md-tabs  md-center-tabs="true" md-dynamic-height="true" md-border-bottom>
         <md-tab ng-repeat="tab in $ctrl.productos.tabs">
           <md-tab-label>
             <md-button>
@@ -37,7 +37,7 @@
           <md-tab-body>
             <p class="md-padding">
               {{tab.text}}
-              <app-content-grid data="$ctrl.tiles"></app-content-grid>
+              <app-content-grid data="tab.products"></app-content-grid>
             </p>
           </md-tab-body>
         </md-tab>
