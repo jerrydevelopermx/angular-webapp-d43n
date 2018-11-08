@@ -17,7 +17,7 @@
           vm.quienes = {
                       class: 'content-column',
                       title: {
-                              text: '¿QUIÉNES SOMOS?',
+                              text: 'Conoce DAEN',
                               class: 'subcontent-title-white'
                             },
                       description: null,
@@ -70,7 +70,7 @@
                                }]
                     },
                     {
-                      title: 'Asesoramiento',
+                      title: '',
                       class: 'content-column',
                       centered: true,
                       content: [{
@@ -117,7 +117,7 @@
                       centered: true,
                       content: [{
                                   elementType: 'p',
-                                  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
+                                  text: 'Somos distribuidores autorizados de marcas importantes como Konica Minolta y te ofrecemos...'
                                 }]
                     },
                     {
@@ -126,7 +126,7 @@
                       centered: true,
                       content: [{
                                  elementType: 'p',
-                                 text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                                 text: 'Contar con un asesor de confianza beneficia a la compañía a buscar canales de mejora y desarrollo. Te ofrecemos la mejor información y...'
                                }]
                     },
                     {
@@ -135,7 +135,16 @@
                       centered: true,
                       content: [{
                                   elementType: 'p',
-                                  text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                                  text: 'Si has adquirido algún equipo con nosotros, te ofrecemos al mejor equipo de profesionales capacitados para darle mantenimiento y...'
+                                }]
+                    },
+                    {
+                      title: 'Materiales y consumibles',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                  elementType: 'p',
+                                  text: 'Te ofrecemos todo lo necesario para surtir papelerías y centros de negocio, con las líneas de consumibles más grandes a nivel mundial y...'
                                 }]
                     }],
               bottom : {

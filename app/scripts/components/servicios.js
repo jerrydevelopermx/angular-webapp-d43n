@@ -14,54 +14,131 @@
         var vm = this;
 
         vm.$onInit = function(){
-          vm.documentos = {
-                      title: 'Redes de gestión de documentos',
-                      colOne: {
-                              content: [{
-                                         elementType: 'p',
-                                         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie. Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus,'
-                                       }]
+          vm.servicios = {
+                      class: 'content-column',
+                      title: {
+                              text: 'CREA, GESTIONA, INNOVA',
+                              class: 'subcontent-title-white'
+                            },
+                      description: {
+                                    text: 'Con la más alta tecnología en sistemas de gestión de documentos, las marcas más innovadoras del mercado y nuestro compromiso por hacer crecer tu negocio, te ofrecemos:',
+                                    class: 'subcontent-title justified'
+                                  },
+                      columns: []
+                  };
 
-                            }
-                      };
-            vm.asesoramiento = {
-                        title: 'Asesoramiento',
-                        class: 'content-column blue-background',
-                        styles: 'subcontent-title-blue',
 
-                                  colOne: {
-                                          content: [{
-                                                     elementType: 'p',
-                                                     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie. Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus,'
-                                                   }]
-
-                                        }
-                                  };
-          vm.mantenimiento = {
-              title: 'Mantenimiento',
-              styles: 'subcontent-title-white',
-              class: 'content-column',
-              colOne: {
-                      title: 'Preventivo',
-                      content: [/*{
-                                 elementType: 'icon',
-                                 class: 'icon rounded medium fa-exclamation-triangle'},*/
-                                {
+          vm.docs = {
+            class: 'content-column blue-background',
+            title: {
+                    text: 'Redes de gestión de documentos',
+                    class: 'subcontent-title-blue'
+                  },
+            description: null,
+            columns: [{
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
                                  elementType: 'p',
-                                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum condimentum molestie.'
-                      }]
-                    },
-              colTwo: {
-                      title: 'Correctivo',
-                      content: [/*{
-                                 elementType: 'icon',
-                                 class: 'icon rounded medium fa-ambulance'},*/
-                                {
-                                 elementType: 'p',
-                                 text: 'Pellentesque semper pulvinar diam sed venenatis. Aliquam ut mollis lectus. Morbi molestie aliquam risus, '
+                                 text: 'Somos distribuidores autorizados de marcas importantes como Konica Minolta y te ofrecemos un servicio integral en la venta y renta de equipos multifuncionales. Lo mejor en calidad de impresión, escaneo y sistemas de red.'
                                }]
-                      }
-            }
+                    },
+                    {
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                  elementType: 'img',
+                                  src: 'images/docs2.jpg',
+                                  class: 'img-servicio'
+                              }]
+                  }]
+          };
+
+          vm.mantenimiento = {
+            class: 'content-column',
+            title: {
+                    text: 'Mantenimiento',
+                    class: 'subcontent-title-white'
+                  },
+            description: null,
+            columns: [{
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                  elementType: 'img',
+                                  src: 'images/mtto.gif',
+                                  class: 'img-servicio'
+                              }]
+                    },
+                    {
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                         elementType: 'p',
+                         text: 'Si has adquirido algún equipo con nosotros, te ofrecemos al mejor equipo de profesionales capacitados para darle mantenimiento y renovación a tu equipo y siempre se mantenga en óptimas condiciones.'
+                       }]
+                  }]
+          };
+
+          vm.asesoramiento = {
+            class: 'content-column blue-background',
+            title: {
+                    text: 'Asesoramiento',
+                    class: 'subcontent-title-blue'
+                  },
+            description: null,
+            columns: [{
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                         elementType: 'p',
+                         text: 'Contar con un asesor de confianza beneficia a la compañía a buscar canales de mejora y desarrollo. Te ofrecemos la mejor información y servicio para facilitar, mejorar y optimizar tu negocio con los últimos avances en tecnología.'
+                        }]
+                    },
+                    {
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                 elementType: 'img',
+                                 src: 'images/asesoria.jpg',
+                                 class: 'img-servicio'
+                             }]
+                  }]
+          };
+          vm.materiales = {
+            class: 'content-column',
+            title: {
+                    text: 'Materiales y consumibles',
+                    class: 'subcontent-title-white'
+                  },
+            description: null,
+            columns: [{
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                                  elementType: 'img',
+                                  src: 'images/material.png',
+                                  class: 'img-servicio'
+                              }]
+                    },
+                    {
+                      title: '',
+                      class: 'content-column',
+                      centered: true,
+                      content: [{
+                         elementType: 'p',
+                         text: 'Te ofrecemos todo lo necesario para surtir papelerías y centros de negocio, con las líneas de consumibles más grandes a nivel mundial y con una gran infraestructura de desarrollo, mejora continua de productos y distribución.'
+                       }]
+                  }]
+          };
+
 
         }
       }
