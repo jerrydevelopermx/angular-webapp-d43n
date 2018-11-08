@@ -235,8 +235,23 @@ a.icon {
 }
 
 md-pagination-wrapper {
-    height: 80px;
+    /*height: 80px;*/
 }
 md-tab-item {
-    padding: 5px 25px !important;
+    /*padding: 5px 25px !important;*/
+}
+
+.png-icon {
+    margin: 5px auto auto;
+    padding: 0;
+    display: inline-block;
+    background-repeat: no-repeat no-repeat;
+    pointer-events: none;
+}
+
+.md-tab {
+  padding: 0;
+}
+md-tabs:not(.md-no-tab-content){
+    min-height: 100%;
 }
