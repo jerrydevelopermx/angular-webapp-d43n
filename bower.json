@@ -6,7 +6,8 @@
     "angular-ui-router": "^1.0.20",
     "angular-material": "^1.1.10",
     "angular-google-maps": "2.3.3",
-    "angular-simple-logger": "^0.1.7"
+    "angular-simple-logger": "^0.1.7",
+    "angular-ui-carousel": "^0.1.10"
   },
   "resolutions": {
     "angular": "1.7.2"

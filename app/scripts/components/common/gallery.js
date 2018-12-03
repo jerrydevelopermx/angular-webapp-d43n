@@ -14,26 +14,27 @@
         var vm = this;
 
         vm.$onInit = function(){
+          vm.images2 = ["images/banner-01.jpg","images/banner-02.jpg"];
           vm.images = [
             {
-              src: "images/banner-01.jpg",
-              alt: "image 1",
-              link: "http://www.higgidy.co.uk"
+              image: "images/banner-01.jpg",
+              title: "image 1",
+              description: "http://www.higgidy.co.uk"
             },
             {
-              src: "images/banner-02.jpg",
-              alt: "image 2",
-              link: "http://www.higgidy.co.uk"
+              image: "images/banner-02.jpg",
+              title: "image 2",
+              description: "http://www.higgidy.co.uk"
             },
             {
-              src: "images/konica-minolta.png",
-              alt: "image 3",
-              link: "http://www.higgidy.co.uk"
+              image: "images/konica-minolta.png",
+              title: "image 3",
+              description: "http://www.higgidy.co.uk"
             },
             {
-              src: "images/Logo-DAEN-350.png",
-              alt: "image 3",
-              link: "http://www.higgidy.co.uk"
+              image: "images/Logo-DAEN-350.png",
+              title: "image 3",
+              description: "http://www.higgidy.co.uk"
             }
           ]
 

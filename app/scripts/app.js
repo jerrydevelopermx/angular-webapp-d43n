@@ -14,10 +14,11 @@ angular
       'ngMaterial',
       'ngMessages',
       'uiGmapgoogle-maps',
-      'nemLogging'
+      'nemLogging',
+      'ui.carousel'
   ])
 
-  .controller('HiggidyCarousel.controller', ["$scope", "$interval", function($scope, $interval) {
+/*  .controller('HiggidyCarousel.controller', ["$scope", "$interval", function($scope, $interval) {
     var timeout;
     $scope.carousel = {
       current: 0,
@@ -92,6 +93,7 @@ angular
     };
     return directive;
   });
+  */
   /*
   .config(['$httpProvider', ($httpProvider) => {
     //initialize get if not there
