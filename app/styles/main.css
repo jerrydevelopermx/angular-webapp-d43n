@@ -25,6 +25,9 @@ body {
     img.producto {
       height: 285px;
     }
+    img.zebra {
+      height: 200px;
+    }
     img.img-servicio{
       height: 292px;
     }
@@ -92,6 +95,9 @@ body {
 
     img.producto {
       height: 100px;
+    }
+    img.zebra {
+      height: 150px;
     }
     img.img-servicio{
       height: 240px;

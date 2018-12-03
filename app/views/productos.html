@@ -35,7 +35,8 @@ md-tab-item {
             </md-button>
           </md-tab-label>
           <md-tab-body>
-            <div layout="row">
+
+            <div layout="row" ng-show="tab.navbar!=null">
               <md-sidenav md-is-locked-open="true" class="sidebarleft">
                 <div class="label" ng-repeat="(key, value) in tab.navbar" ng-click="$ctrl.activeTab=$index" ng-class="{'active': activeTab===$index}" layout="column" layout-align="center center">
                   <md-button ng-class="{'selected-button':$ctrl.activeTab==$index}">{{value}}</md-button>
@@ -47,6 +48,12 @@ md-tab-item {
                   </div>
               </md-content>
             </div>
+
+            <div layout="column" ng-show="tab.navbar==null">
+              <app-content-grid style="grid.class" title="grid.type" data="grid.imgs" ng-repeat="grid in tab.items"></app-content-grid>
+            </div>
+
+
           </md-tab-body>
         </md-tab>
       </md-tabs>
