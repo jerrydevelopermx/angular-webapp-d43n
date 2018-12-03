@@ -5,4 +5,5 @@
   <ul ng-if="c.elementType === 'ul'" class="{{c.class}}">
     <li ng-repeat="l in c.list"><a class="{{l.class}}" href="#!/{{l.url}}">{{l.label}}</a></li>
   </ul>
+  <div id="{{c.id}}" class="{{c.id}}" ng-if="c.elementType === 'component'"></div>
 </div>

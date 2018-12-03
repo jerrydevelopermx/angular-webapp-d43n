@@ -2,13 +2,11 @@
     'use strict';
     angular.module('webApp')
 
-    .component('appContentGrid', {
+    .component('appNColsRows', {
         bindings: {
           data: '=',
-          title: '=',
-          style: '='
         },
-        templateUrl: 'views/common/content-grid.html',
+        templateUrl: 'views/common/content-n-cols-rows.html',
         controller: componentController
       });
 

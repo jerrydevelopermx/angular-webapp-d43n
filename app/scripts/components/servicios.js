@@ -50,7 +50,7 @@
                       centered: true,
                       content: [{
                                   elementType: 'img',
-                                  src: 'images/docs2.jpg',
+                                  src: 'images/servicios/redes.png',
                                   class: 'img-servicio'
                               }]
                   }]
@@ -69,7 +69,7 @@
                       centered: true,
                       content: [{
                                   elementType: 'img',
-                                  src: 'images/mtto.gif',
+                                  src: 'images/servicios/mantenimiento.png',
                                   class: 'img-servicio'
                               }]
                     },
@@ -106,7 +106,7 @@
                       centered: true,
                       content: [{
                                  elementType: 'img',
-                                 src: 'images/asesoria.jpg',
+                                 src: 'images/servicios/asesor.png',
                                  class: 'img-servicio'
                              }]
                   }]
@@ -124,7 +124,7 @@
                       centered: true,
                       content: [{
                                   elementType: 'img',
-                                  src: 'images/material.png',
+                                  src: 'images/servicios/materiales.png',
                                   class: 'img-servicio'
                               }]
                     },

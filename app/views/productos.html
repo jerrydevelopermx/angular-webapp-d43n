@@ -1,44 +1,48 @@
+<style>
+
+
+.label {
+  padding: 30px 5px;
+
+}
+
+md-pagination-wrapper {
+    height: 100px;
+}
+md-tab {
+  max-width: 350px!important;
+}
+md-tab-item {
+    width: 350px
+}
+
+md-tabs-canvas{
+  height: 100px !important;
+}
+</style>
 <div flex layout="column">
-  <div>{{$ctrl.productos.description}}</div>
-
-
+  <div class="{{$ctrl.productos.description.class}}">{{$ctrl.productos.description.text}}</div>
     <md-content>
-<!--
-      <div >
-        <md-sidenav
-        class="md-sidenav-left"
-        md-component-id="left"
-        md-is-locked-open="$mdMedia('xs')"
-        md-whiteframe="4">
-
-          <md-toolbar class="md-theme-indigo">
-            <h1 class="md-toolbar-tools">Marcas</h1>
-          </md-toolbar>
-          <md-content layout-padding>
-            <md-button ng-click="close()" class="md-primary" hide-gt-md>
-              Close Sidenav Left
-            </md-button>
-            <p hide show-gt-md>
-              This sidenav is locked open on your device. To go back to the default behavior,
-              narrow your display.
-            </p>
-          </md-content>
-
-        </md-sidenav>
-      </div>
--->
       <md-tabs md-center-tabs="true" md-dynamic-height="true" md-border-bottom>
         <md-tab ng-repeat="tab in $ctrl.productos.tabs">
           <md-tab-label>
-            <md-button>
-              <img src="{{tab.img}}" class="png-icon" style="height: 100%; width:100%">
+            <md-button class="tab-button">
+              <img src="{{tab.img}}" class="png-icon">
             </md-button>
           </md-tab-label>
           <md-tab-body>
-            <p class="md-padding">
-              {{tab.text}}
-              <app-content-grid data="tab.products"></app-content-grid>
-            </p>
+            <div layout="row">
+              <md-sidenav   md-is-locked-open="true" class="sidebarleft">
+                <div class="label" ng-repeat="(key, value) in tab.navbar" ng-click="$ctrl.activeTab=$index" ng-class="{'active': activeTab===$index}" layout="column" layout-align="center center">
+                  <md-button>{{value}}</md-button>
+                </div>
+              </md-sidenav>
+              <md-content layout-padding flex class="content">
+          		    <div class="tab" ng-repeat="item in tab.items" ng-show="$ctrl.activeTab==$index">
+                    <app-content-grid style="grid.class" title="grid.type" data="grid.imgs" ng-repeat="grid in item.grids"></app-content-grid>
+                  </div>
+              </md-content>
+            </div>
           </md-tab-body>
         </md-tab>
       </md-tabs>
