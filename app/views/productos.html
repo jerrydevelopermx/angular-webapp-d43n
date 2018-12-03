@@ -9,21 +9,25 @@
 md-pagination-wrapper {
     height: 100px;
 }
-md-tab {
+
+.partners-tabs .md-tab {
   max-width: 350px!important;
+  padding:0px !important;
 }
 md-tab-item {
     width: 350px
 }
 
-md-tabs-canvas{
-  height: 100px !important;
+
+
+.label.md-button{
+  color:red !important
 }
 </style>
 <div flex layout="column">
   <div class="{{$ctrl.productos.description.class}}">{{$ctrl.productos.description.text}}</div>
     <md-content>
-      <md-tabs md-center-tabs="true" md-dynamic-height="true" md-border-bottom>
+      <md-tabs md-center-tabs="true" class="partners-tabs" md-dynamic-height="true" md-border-bottom>
         <md-tab ng-repeat="tab in $ctrl.productos.tabs">
           <md-tab-label>
             <md-button class="tab-button">
@@ -32,9 +36,9 @@ md-tabs-canvas{
           </md-tab-label>
           <md-tab-body>
             <div layout="row">
-              <md-sidenav   md-is-locked-open="true" class="sidebarleft">
+              <md-sidenav md-is-locked-open="true" class="sidebarleft">
                 <div class="label" ng-repeat="(key, value) in tab.navbar" ng-click="$ctrl.activeTab=$index" ng-class="{'active': activeTab===$index}" layout="column" layout-align="center center">
-                  <md-button>{{value}}</md-button>
+                  <md-button ng-class="{'selected-button':$ctrl.activeTab==$index}">{{value}}</md-button>
                 </div>
               </md-sidenav>
               <md-content layout-padding flex class="content">
