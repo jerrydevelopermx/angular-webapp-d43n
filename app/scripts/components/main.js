@@ -27,7 +27,7 @@
                                 centered: true,
                                 content: [{
                                            elementType: 'p',
-                                           text: 'DAEN se funda el 19 de enero de 2003, como una inquietud a dar respuesta a los usuarios como una empresa seria, honesta y que cumpla  con las normas de calidad que las empresas requieren.'
+                                           text: 'DAEN se funda el 19 de Enero de 2003, como una inquietud a dar respuesta a los usuarios como una empresa seria, honesta y que cumpla  con las normas de calidad que las empresas requieren.'
                                          },
                                          {
                                            elementType:'p',

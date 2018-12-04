@@ -28,7 +28,7 @@
                       centered: true,
                       content: [{
                           elementType: 'p',
-                          text: 'Ser una Empresa dedicada a la aplicación de sistemas de gestión en impresión y reproducción con la más alta tecnología con servicio de calidad, en un marco de honestidad, respeto y confianza. Proporcionando beneficios que brinden oportunidades de crecimiento y superación a nuestros clientes internos y externos.'
+                          text: 'Ser una empresa dedicada a la aplicación de sistemas de gestión en impresión y reproducción con la más alta tecnología con servicio de calidad, en un marco de honestidad, respeto y confianza. Proporcionando beneficios que brinden oportunidades de crecimiento y superación a nuestros clientes internos y externos.'
                       }]
                     },
                     {
