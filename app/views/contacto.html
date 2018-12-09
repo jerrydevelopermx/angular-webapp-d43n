@@ -12,25 +12,27 @@
 </div>
 <div flex layout="column" class="content-column blue-background" layout-md="column" layout-xs="column">
   <h2>Contáctanos</h2>
-  <div layout="row" layout-align="center center">
-    <form action="#" method="post">
-        <div flex layout="row" layout-md="column" layout-xs="column" layout-padding layout-margin>
-             <div flex="70" >
-                <input name="name" id="name" value="" placeholder="Nombre" type="text">
-              </div>
-              <div flex="70" >
-                <input name="email" id="email" value="" placeholder="Email" type="email">
-              </div>
-        </div>
-        <div flex layout="row"  layout-padding layout-margin>
-             <textarea style="width:100%" name="message" id="message" placeholder="Mensaje" rows="6"></textarea>
-        </div>
-        <div layout="row" layout-align="center center" layout-padding layout-margin>
-          <ul class="actions">
-            <li><input value="Enviar" class="button big" type="submit"></li>
-            </ul>
-        </div>
-      </form>
+  <div layout="column" layout-align="center center">
+    <div flex>
+      <form action="#">
+          <div flex layout="row" layout-md="column" layout-xs="column" layout-margin layout-fill>
+               <div flex="70" >
+                  <input name="name" id="name" value="" placeholder="Nombre" type="text">
+                </div>
+                <div flex="70" >
+                  <input name="email" id="email" value="" placeholder="Email" type="email">
+                </div>
+          </div>
+          <div flex layout="column" layout-fill layout-margin>
+               <textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea>
+          </div>
+          <div layout="row" layout-align="center center" layout-padding layout-margin>
+            <ul class="actions">
+              <li><input value="Enviar" class="button big" type="submit"></li>
+              </ul>
+          </div>
+        </form>
+      </div>
     </div>
 </div>
 <!--
