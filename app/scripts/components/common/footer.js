@@ -22,7 +22,7 @@
                       title: 'Productos',
                       class: '',
                       titleClass:'centered',
-                      centered: true,
+                      centered: false,
                       content: [{
                                   elementType: 'ul',
                                   class: 'footer-list',
@@ -44,7 +44,7 @@
                     { title: 'Servicios',
                       class: '',
                       titleClass:'centered',
-                      centered: true,
+                      centered: false,
                       content: [{
                                   elementType: 'ul',
                                   class: 'footer-list',
