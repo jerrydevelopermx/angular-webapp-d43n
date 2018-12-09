@@ -7,7 +7,7 @@
   </div>
   <div flex layout="row" layout-md="column" layout-xs="column">
     <div layout="column" layout-align="center center" flex class="{{column.class}}" ng-repeat="column in $ctrl.data.columns">
-      <h4>{{column.title}}</h4>
+      <h4 class="{{column.titleClass}}">{{column.title}}</h4>
       <element-content data="column"></element-content>
     </div>
   </div>

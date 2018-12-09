@@ -28,6 +28,7 @@
                       centered: true,
                       content: [{
                           elementType: 'p',
+                          class: 'justified',
                           text: 'Ser una empresa dedicada a la aplicación de sistemas de gestión en impresión y reproducción con la más alta tecnología con servicio de calidad, en un marco de honestidad, respeto y confianza. Proporcionando beneficios que brinden oportunidades de crecimiento y superación a nuestros clientes internos y externos.'
                       }]
                     },
@@ -37,6 +38,7 @@
                       centered: true,
                       content: [{
                           elementType: 'p',
+                          class: 'justified',
                           text: 'Ser la empresa líder en el Estado, traspasando las fronteras del mismo, dominando nuestra área comercial para llegar a quienes requieran nuestros productos proporcionando calidad en el servicio, y personal especializado que entienda sus necesidades, exigiendo nuestro máximo esfuerzo para satisfacerlas.'
                         }]
                     },
@@ -46,6 +48,7 @@
                       centered: true,
                       content: [{
                           elementType: 'p',
+                          class: 'justified',
                           text: 'Por ello nuestra filosofía siempre estará centrada en brindar el mejor servicio, con excelente calidad y a precios competitivos, manejando el estándar de “no ofrecer lo que no podemos cumplir”. Para lograr estar en el corazón de nuestros clientes como símbolos de respeto, ética y honestidad.'
                         }]
                     }]
@@ -65,6 +68,7 @@
                         centered: true,
                         content: [{
                             elementType: 'p',
+                            class: 'justified',
                             text: 'Fundamentada en la calidad humana expresada en el trato amable, la coherencia y sinceridad hacia nuestros clientes y colaboradores. Cuando se está entre personas con este valor, cualquier proyecto humano se puede realizar y la confianza toma gran relevancia para llevarlo a cabo.'
                         }]
                       },
@@ -74,6 +78,7 @@
                         centered: true,
                         content: [{
                             elementType: 'p',
+                            class: 'justified',
                             text: 'Los integrantes de DAEN cumplirán fiel y disciplinadamente todos los deberes propios de su trabajo en la empresa, sabrán ir más allá si así lo requiera el interés de la organización o los deberes de lealtad y compañerismo. '
                           }]
                       }]
@@ -85,6 +90,7 @@
                         centered: true,
                         content: [{
                             elementType: 'p',
+                            class: 'justified',
                             text: 'El equipo de DAEN demuestra empatía y tolerancia, reconoce y comprende individualidades. Demuestran ser justos, cuidadosos, sinceros, amables y considerados en el trato con cada persona con la que se relacione como producto de su trabajo. '
                         }]
                       },
@@ -94,6 +100,7 @@
                         centered: true,
                         content: [{
                             elementType: 'p',
+                            class: 'justified',
                             text: 'Este valor aunado a la responsabilidad con las labores que debemos desempeñar, tanto con nuestros clientes como con nuestro propio equipo, los visualizamos como claves para el logro del éxito organizacional.'
                           }]
                       }]

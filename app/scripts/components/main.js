@@ -27,10 +27,12 @@
                                 centered: true,
                                 content: [{
                                            elementType: 'p',
+                                           class: 'justified',
                                            text: 'DAEN se funda el 19 de Enero de 2003, como una inquietud a dar respuesta a los usuarios como una empresa seria, honesta y que cumpla  con las normas de calidad que las empresas requieren.'
                                          },
                                          {
                                            elementType:'p',
+                                           class: 'justified',
                                            text:'En quince años hemos logrado consolidarnos como una de las empresas de mayor prestigio en nuestra área al proveer a nuestros clientes un sistema continuo de monitoreo, lo que nos hace los mejores socios en sus negocios, manteniéndolos a la vanguardia y mejorando sus sistemas día a día.'
                                          }]
                               }],
@@ -42,7 +44,7 @@
                                     list: [{
                                               label:'Ver más',
                                               class:'button medium',
-                                              url: 'nosotros'
+                                              url: '#!/nosotros'
                                           }]
 
                                   }]
@@ -57,7 +59,7 @@
                   },
             description: {
                           text: 'En DAEN estamos comprometidos con la calidad. Es por eso que somos distribuidores de las marcas más reconocidas del mercado:',
-                          class: 'subcontent-title justified'
+                          class: 'subcontent-title centered'
                         },
             columns: [{
                       title: '',
@@ -97,7 +99,7 @@
                             list: [{
                                       label:'Ver más',
                                       class:'button medium',
-                                      url:'productos'
+                                      url:'#!/productos'
                                   }]
 
                           }]
@@ -117,6 +119,7 @@
                       centered: true,
                       content: [{
                                   elementType: 'p',
+                                  class: 'justified',
                                   text: 'Somos distribuidores autorizados de marcas importantes como Konica Minolta y te ofrecemos...'
                                 }]
                     },
@@ -126,6 +129,7 @@
                       centered: true,
                       content: [{
                                  elementType: 'p',
+                                 class: 'justified',
                                  text: 'Contar con un asesor de confianza beneficia a la compañía a buscar canales de mejora y desarrollo. Te ofrecemos la mejor información y...'
                                }]
                     },
@@ -135,6 +139,7 @@
                       centered: true,
                       content: [{
                                   elementType: 'p',
+                                  class: 'justified',
                                   text: 'Si has adquirido algún equipo con nosotros, te ofrecemos al mejor equipo de profesionales capacitados para darle mantenimiento y...'
                                 }]
                     },
@@ -144,6 +149,7 @@
                       centered: true,
                       content: [{
                                   elementType: 'p',
+                                  class: 'justified',
                                   text: 'Te ofrecemos todo lo necesario para surtir papelerías y centros de negocio, con las líneas de consumibles más grandes a nivel mundial y...'
                                 }]
                     }],
@@ -155,7 +161,7 @@
                             list: [{
                                       label:'Ver más',
                                       class:'button medium',
-                                      url:'servicios'
+                                      url:'#!/servicios'
                                   }]
 
                           }]
@@ -163,19 +169,6 @@
           };
 
 
-        };
-
-
-        vm.$postLink = function(){
-          console.log('MAIN Post link() DOM ready!')
-        };
-
-        vm.$onChanges = function($event){
-          console.log($event);
-        };
-
-        vm.$onDestroy = function(){
-          console.log('MAIN component destroy!! :( ')
         };
 
       }

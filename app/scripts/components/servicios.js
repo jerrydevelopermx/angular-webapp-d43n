@@ -41,6 +41,7 @@
                       centered: true,
                       content: [{
                                  elementType: 'p',
+                                 class: 'justified',
                                  text: 'Somos distribuidores autorizados de marcas importantes como Konica Minolta y te ofrecemos un servicio integral en la venta y renta de equipos multifuncionales. Lo mejor en calidad de impresión, escaneo y sistemas de red.'
                                }]
                     },
@@ -79,6 +80,7 @@
                       centered: true,
                       content: [{
                          elementType: 'p',
+                         class: 'justified',
                          text: 'Si has adquirido algún equipo con nosotros, te ofrecemos al mejor equipo de profesionales capacitados para darle mantenimiento y renovación a tu equipo y siempre se mantenga en óptimas condiciones.'
                        }]
                   }]
@@ -97,6 +99,7 @@
                       centered: true,
                       content: [{
                          elementType: 'p',
+                         class: 'justified',
                          text: 'Contar con un asesor de confianza beneficia a la compañía a buscar canales de mejora y desarrollo. Te ofrecemos la mejor información y servicio para facilitar, mejorar y optimizar tu negocio con los últimos avances en tecnología.'
                         }]
                     },
@@ -134,6 +137,7 @@
                       centered: true,
                       content: [{
                          elementType: 'p',
+                         class: 'justified',
                          text: 'Te ofrecemos todo lo necesario para surtir papelerías y centros de negocio, con las líneas de consumibles más grandes a nivel mundial y con una gran infraestructura de desarrollo, mejora continua de productos y distribución.'
                        }]
                   }]

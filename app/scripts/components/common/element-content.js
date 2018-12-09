@@ -4,7 +4,7 @@
 
     .component('elementContent', {
         bindings: {
-          data: '=',
+          data: '='
         },
         templateUrl: 'views/common/element-content.html',
         controller: componentController
@@ -16,6 +16,10 @@
 
         vm.$onInit = function(){
           //console.log(this.data)
+        }
+
+        vm.redirectTo = function(url){
+          console.log(url)
         }
 
       }

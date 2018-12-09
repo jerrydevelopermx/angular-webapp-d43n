@@ -55,6 +55,9 @@ body {
     .partners-tabs md-tabs-canvas{
       height: 90px !important;
     }
+    h4.grid-title  {
+      font-size: 16px;
+    }
 }
 
 
@@ -124,6 +127,9 @@ body {
     }
     .partners-tabs md-tabs-canvas{
       height: 55px !important;
+    }
+    h4.grid-title  {
+      font-size: 14px;
     }
 }
 
@@ -285,10 +291,18 @@ a.icon {
   text-justify: inter-word;
   word-spacing:-1px;
   }
-.grid-title h4 {
-  font-size: 14px;
+.left-align {
+  text-align: left;
 }
+.right-align{
+  text-align: right;
+}
+
 .selected-button {
   color: #111161;
   font-weight: bolder;
+}
+ul.footer-list{
+  text-align: left;
+  list-style-type: none;
 }
