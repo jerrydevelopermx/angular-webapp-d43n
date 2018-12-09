@@ -307,3 +307,10 @@ ul.footer-list{
   list-style-type: none;
   width: 250px;
 }
+
+ul.footer-list a {
+  text-decoration: none;
+}
+ul.footer-list a:hover {
+  text-decoration: underline;
+}
