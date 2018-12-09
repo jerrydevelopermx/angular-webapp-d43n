@@ -10,7 +10,7 @@
         controller: componentController
       })
 
-      function componentController($scope, $timeout, $mdSidenav, $rootScope){
+      function componentController($scope, $timeout, $mdSidenav, $rootScope, $location){
 
         var vm = this;
         vm.aja;
@@ -21,7 +21,7 @@
         };
 
         vm.$onInit = function(){
-          vm.currentNav = 'home';
+          vm.currentNav = $location.path().substring(1,$location.path().length);
         }
 
         vm.menuClicked = function(){
