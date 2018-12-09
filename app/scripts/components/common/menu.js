@@ -10,14 +10,19 @@
         controller: componentController
       })
 
-      function componentController($scope, $timeout, $mdSidenav){
+      function componentController($scope, $timeout, $mdSidenav, $rootScope){
 
         var vm = this;
+        vm.aja;
         vm.toggleLeft = buildDelayedToggler('left');
         vm.toggleRight = buildToggler('right');
         vm.isOpenRight = function() {
           return $mdSidenav('right').isOpen();
         };
+
+        vm.$onInit = function(){
+          vm.currentNav = 'home';
+        }
 
         vm.menuClicked = function(){
           $mdSidenav('right').close()
@@ -60,5 +65,13 @@
               });
           }
         }
+
+        $rootScope.$on("$locationChangeStart", function(event, next, current) {
+          var spl = next.split('/');
+          vm.currentNav = spl[4] != '' ? spl[4] : 'home';
+          if(vm.currentNav.indexOf('#') !== -1){
+            vm.currentNav = vm.currentNav.substring(0, vm.currentNav.indexOf('#'))
+          }
+        })
       }
 })();

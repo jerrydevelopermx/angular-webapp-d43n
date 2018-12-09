@@ -28,15 +28,15 @@
                                   class: 'footer-list',
                                   list: [{
                                             label:'Konica Minolta',
-                                            url:'#!/productos'
+                                            url:'#!/productos/konica'
                                           },
                                           {
                                             label:'OKI',
-                                            url:'#!/productos'
+                                            url:'#!/productos/oki'
                                           },
                                           {
                                             label:'Zebra',
-                                            url:'#!/productos'
+                                            url:'#!/productos/zebra'
                                           }]
 
                                 }]
@@ -50,16 +50,21 @@
                                   class: 'footer-list',
                                   list: [{
                                             label:'Gestión de documentos',
-                                            url:'#!/servicios'
-                                          },
-                                          {
-                                            label:'Asesoramiento',
-                                            url:'#!/servicios'
+                                            url:'#!/servicios/documentos'
                                           },
                                           {
                                             label:'Mantenimiento',
-                                            url:'#!/servicios'
-                                        }]
+                                            url:'#!/servicios/mantenimiento'
+                                          },
+                                          {
+                                            label:'Asesoramiento',
+                                            url:'#!/servicios/asesoramiento'
+                                          },
+                                          {
+                                            label:'Materiales y consumibles',
+                                            url:'#!/servicios/materiales'
+                                          }
+                                          ]
                                 }]
                       },
                       { title: '¡Síguenos!',

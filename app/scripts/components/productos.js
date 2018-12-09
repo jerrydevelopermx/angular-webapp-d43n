@@ -10,10 +10,31 @@
         controller: componentController
       })
 
-      function componentController($scope){
+
+
+      function componentController($scope,$stateParams,$anchorScroll, $location, $rootScope){
         var vm = this;
+        vm.tabSelectedIndex = 0;
+        var partners = ['konica','oki','zebra'];
+
+        function anchorScroll(){
+          var newHash = 'logo-div';
+              if ($location.hash() !== newHash) {
+                // set the $location.hash to `newHash` and
+                // $anchorScroll will automatically scroll to it
+                $location.hash(newHash);
+              } else {
+                // call $anchorScroll() explicitly,
+                // since $location.hash hasn't changed
+                $anchorScroll();
+              }
+        }
 
         vm.$onInit = function(){
+          anchorScroll();
+          if($stateParams.partner) {
+            vm.tabSelectedIndex = partners.indexOf($stateParams.partner);
+          }
           vm.activeTab = 0;
           var zebra = [{ type: 'Enmicadoras',
                           class: 'grid-title',
@@ -109,6 +130,7 @@
 
           vm.productos = {
               description: {
+                    id:'main-div',
                     text: 'Trabajamos contigo y con lo mejor en tecnología, innovación y calidad para hacer crecer tu empresa. Somos distribuidores  autorizados de las marcas más reconocidas y que nos ofrecen garantía de satisfacción.',
                     class: 'subcontent-title justified'
                   },

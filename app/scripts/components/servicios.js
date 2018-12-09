@@ -10,12 +10,33 @@
         controller: componentController
       })
 
-      function componentController($scope){
+      function componentController($scope, $rootScope, $anchorScroll,$location, $stateParams){
         var vm = this;
 
+        function anchorScroll(){
+          var newHash = ($stateParams.servicio) ? $stateParams.servicio + '-div': 'logo-div';
+              if ($location.hash() !== newHash) {
+                // set the $location.hash to `newHash` and
+                // $anchorScroll will automatically scroll to it
+                $location.hash(newHash);
+              } else {
+                // call $anchorScroll() explicitly,
+                // since $location.hash hasn't changed
+                $anchorScroll();
+              }
+        }
+
         vm.$onInit = function(){
+          //console.log($stateParams);
+          //if($stateParams.servicio){
+            anchorScroll();
+          //}
+
+
+
           vm.servicios = {
                       class: 'content-column',
+                      id: 'main-div',
                       title: {
                               text: 'CREA, GESTIONA, INNOVA',
                               class: 'subcontent-title-white'
@@ -27,9 +48,9 @@
                       columns: []
                   };
 
-
           vm.docs = {
             class: 'content-column blue-background',
+            id: 'documentos-div',
             title: {
                     text: 'Redes de gestión de documentos',
                     class: 'subcontent-title-blue'
@@ -59,6 +80,7 @@
 
           vm.mantenimiento = {
             class: 'content-column',
+            id: 'mantenimiento-div',
             title: {
                     text: 'Mantenimiento',
                     class: 'subcontent-title-white'
@@ -88,6 +110,7 @@
 
           vm.asesoramiento = {
             class: 'content-column blue-background',
+            id: 'asesoramiento-div',
             title: {
                     text: 'Asesoramiento',
                     class: 'subcontent-title-blue'
@@ -114,8 +137,10 @@
                              }]
                   }]
           };
+
           vm.materiales = {
             class: 'content-column',
+            id: 'materiales-div',
             title: {
                     text: 'Materiales y consumibles',
                     class: 'subcontent-title-white'

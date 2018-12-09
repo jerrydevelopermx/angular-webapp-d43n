@@ -10,12 +10,21 @@
 angular
   .module('webApp',[
       'ui.router',
+      'ngRoute',
       'ngMaterial',
       'ngMessages',
       'uiGmapgoogle-maps',
       'nemLogging',
       'ui.carousel'
   ])
+
+/*
+  .run(function($rootScope) {
+    $rootScope.$on("$locationChangeStart", function(event, next, current) {
+
+        $rootScope.$broadcast('urlchanged', {h:1});
+    })
+  })*/
   /*
   .config(['$httpProvider', ($httpProvider) => {
     //initialize get if not there

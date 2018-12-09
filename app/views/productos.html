@@ -25,9 +25,9 @@ md-tab-item {
 }
 </style>
 <div flex layout="column">
-  <div class="{{$ctrl.productos.description.class}}">{{$ctrl.productos.description.text}}</div>
+  <div id="{{$ctrl.productos.description.id}}" class="{{$ctrl.productos.description.class}}">{{$ctrl.productos.description.text}}</div>
     <md-content>
-      <md-tabs md-center-tabs="true" class="partners-tabs" md-dynamic-height="true" md-border-bottom>
+      <md-tabs md-center-tabs="true" class="partners-tabs" md-dynamic-height="true" md-border-bottom md-selected="$ctrl.tabSelectedIndex">
         <md-tab ng-repeat="tab in $ctrl.productos.tabs">
           <md-tab-label>
             <md-button class="tab-button">
