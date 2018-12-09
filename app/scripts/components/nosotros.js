@@ -10,11 +10,24 @@
         controller: componentController
       })
 
-      function componentController($scope){
+      function componentController($scope,$anchorScroll,$location){
         var vm = this;
 
-        vm.$onInit = function(){
+        function anchorScroll(){
+          var newHash = 'logo-div';
+              if ($location.hash() !== newHash) {
+                // set the $location.hash to `newHash` and
+                // $anchorScroll will automatically scroll to it
+                $location.hash(newHash);
+              } else {
+                // call $anchorScroll() explicitly,
+                // since $location.hash hasn't changed
+                $anchorScroll();
+              }
+        }
 
+        vm.$onInit = function(){
+          anchorScroll();
           vm.compromiso = {
             class: 'content-column',
             title: {
